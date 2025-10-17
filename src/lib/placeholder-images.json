@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-banner",
+      "description": "Hero banner showing a federal building at dusk",
+      "imageUrl": "https://picsum.photos/seed/ngonge-hero/1920/1080",
+      "imageHint": "federal building"
+    },
+    {
+      "id": "page-header-about",
+      "description": "Abstract image for about us page header",
+      "imageUrl": "https://picsum.photos/seed/about-header/1200/300",
+      "imageHint": "office interior"
+    },
+    {
+      "id": "page-header-capabilities",
+      "description": "Abstract image for capabilities page header",
+      "imageUrl": "https://picsum.photos/seed/capabilities-header/1200/300",
+      "imageHint": "logistics warehouse"
+    },
+    {
+      "id": "page-header-performance",
+      "description": "Abstract image for past performance page header",
+      "imageUrl": "https://picsum.photos/seed/performance-header/1200/300",
+      "imageHint": "data chart"
+    },
+    {
+      "id": "page-header-certifications",
+      "description": "Abstract image for certifications page header",
+      "imageUrl": "https://picsum.photos/seed/certs-header/1200/300",
+      "imageHint": "official document"
+    },
+    {
+      "id": "page-header-resources",
+      "description": "Abstract image for resources page header",
+      "imageUrl": "https://picsum.photos/seed/resources-header/1200/300",
+      "imageHint": "bookshelf library"
+    },
+    {
+      "id": "page-header-contact",
+      "description": "Abstract image for contact page header",
+      "imageUrl": "https://picsum.photos/seed/contact-header/1200/300",
+      "imageHint": "communication network"
+    },
+    {
+      "id": "leader-1",
+      "description": "Portrait of a company leader",
+      "imageUrl": "https://picsum.photos/seed/leader1/400/400",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "leader-2",
+      "description": "Portrait of a company leader",
+      "imageUrl": "https://picsum.photos/seed/leader2/400/400",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "leader-3",
+      "description": "Portrait of a company leader",
+      "imageUrl": "https://picsum.photos/seed/leader3/400/400",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "case-study-1",
+      "description": "Image for a logistics case study",
+      "imageUrl": "https://picsum.photos/seed/cs1/600/400",
+      "imageHint": "cargo ship"
+    },
+    {
+      "id": "case-study-2",
+      "description": "Image for a facilities support case study",
+      "imageUrl": "https://picsum.photos/seed/cs2/600/400",
+      "imageHint": "modern building"
+    },
+    {
+      "id": "case-study-3",
+      "description": "Image for a laundry services case study",
+      "imageUrl": "https://picsum.photos/seed/cs3/600/400",
+      "imageHint": "industrial laundry"
+    },
+    {
+      "id": "case-study-4",
+      "description": "Image for a transportation case study",
+      "imageUrl": "https://picsum.photos/seed/cs4/600/400",
+      "imageHint": "transport truck"
+    },
+    {
+      "id": "blog-post-1",
+      "description": "Image for a blog post on logistics",
+      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageHint": "supply chain"
+    },
+    {
+      "id": "blog-post-2",
+      "description": "Image for a blog post on compliance",
+      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageHint": "government regulation"
+    },
+    {
+      "id": "blog-post-3",
+      "description": "Image for a blog post on IT modernization",
+      "imageUrl": "https://picsum.photos/seed/blog3/600/400",
+      "imageHint": "server room"
+    }
+  ]
 }
