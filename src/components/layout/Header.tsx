@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -29,7 +29,7 @@ export function Header() {
               key={link.name}
               href={link.href}
               className={cn(
-                "transition-colors hover:text-accent font-medium tracking-wide",
+                "transition-colors hover:text-accent font-medium tracking-widest uppercase",
                 pathname === link.href ? "text-primary" : "text-muted-foreground"
               )}
             >
@@ -63,7 +63,7 @@ export function Header() {
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className={cn(
-                          "p-3 rounded-l-md text-base font-medium",
+                          "p-3 rounded-l-md text-base font-medium uppercase tracking-wider",
                           pathname === link.href ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"
                       )}
                     >

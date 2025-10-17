@@ -1,6 +1,7 @@
 import { Building, FileText, HardHat, LucideIcon, Mail, Phone, ShieldCheck, Shirt, Star, Truck } from "lucide-react"
 
 export const navLinks = [
+  { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/capabilities' },
   { name: 'Projects', href: '/past-performance' },
@@ -104,31 +105,31 @@ export const certifications = [
 
 export const leadershipTeam = [
   {
-    name: 'John Doe',
-    title: 'Chief Executive Officer',
-    bio: 'With over 20 years of experience in federal logistics, John leads NGONGE with a focus on mission success and client satisfaction. His strategic vision has been instrumental in the company\'s growth.',
+    name: 'Frank Ngonge',
+    title: 'Founder & CEO',
+    bio: 'With over 20 years of experience in federal logistics, Frank leads NGONGE with a focus on mission success and client satisfaction. His strategic vision has been instrumental in the company\'s growth.',
     imageId: 'leader-1',
   },
   {
-    name: 'Jane Smith',
+    name: 'Sanda Vighen',
     title: 'Chief Operating Officer',
-    bio: 'Jane oversees all operational aspects of NGONGE. Her expertise in facility management and process optimization ensures that we deliver efficient and high-quality services to every government partner.',
+    bio: 'Sanda oversees all operational aspects of NGONGE. Her expertise in facility management and process optimization ensures that we deliver efficient and high-quality services to every government partner.',
     imageId: 'leader-2',
   },
   {
-    name: 'Samuel Green',
-    title: 'Director of Logistics',
-    bio: 'Samuel is a master of supply chain management. He directs our transportation and logistics division, ensuring that every delivery is secure, on-time, and within budget.',
+    name: 'Godwill Tumban',
+    title: 'Chief Financial Officer',
+    bio: 'Godwill is a master of supply chain management. He directs our transportation and logistics division, ensuring that every delivery is secure, on-time, and within budget.',
     imageId: 'leader-3',
   },
 ];
 
 export const companyTimeline = [
-  { year: '2015', event: 'NGONGE LLC founded with a focus on local government logistics.' },
-  { year: '2017', event: 'Awarded first federal contract with the General Services Administration (GSA).' },
-  { year: '2019', event: 'Achieved 8(a) and HUBZone certifications from the Small Business Administration (SBA).' },
-  { year: '2021', event: 'Expanded service offerings to include comprehensive facilities support and laundry services.' },
-  { year: '2023', event: 'Received ISO 9001:2015 certification, affirming our commitment to quality management.' },
+    { year: '2015', event: 'NGONGE LLC founded to provide federal and local government services.' },
+    { year: '2017', event: 'Awarded first federal contract with the General Services Administration (GSA).' },
+    { year: '2019', event: 'Achieved 8(a) and HUBZone certifications from the Small Business Administration (SBA).' },
+    { year: '2021', event: 'Expanded service offerings to include comprehensive facilities support and laundry services.' },
+    { year: '2023', event: 'Received ISO 9001:2015 certification for quality management.' },
 ];
 
 export const blogPosts = [

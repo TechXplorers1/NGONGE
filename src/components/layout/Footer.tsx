@@ -26,7 +26,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent">
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent uppercase tracking-wider">
                     {link.name}
                   </Link>
                 </li>
@@ -40,6 +40,7 @@ export function Footer() {
                 <li><Link href="/capabilities/transportation-logistics" className="text-sm text-muted-foreground hover:text-accent">Transportation & Logistics</Link></li>
                 <li><Link href="/capabilities/facilities-support" className="text-sm text-muted-foreground hover:text-accent">Facilities Support</Link></li>
                 <li><Link href="/capabilities/laundry-linen-services" className="text-sm text-muted-foreground hover:text-accent">Laundry & Linen Services</Link></li>
+                <li><Link href="/capabilities/information-technology" className="text-sm text-muted-foreground hover:text-accent">Information Technology</Link></li>
             </ul>
           </div>
 
