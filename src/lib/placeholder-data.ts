@@ -1,12 +1,9 @@
 import { Building, FileText, HardHat, LucideIcon, Mail, Phone, ShieldCheck, Shirt, Star, Truck } from "lucide-react"
 
 export const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
-  { name: 'Capabilities', href: '/capabilities' },
-  { name: 'Past Performance', href: '/past-performance' },
-  { name: 'Certifications', href: '/certifications' },
-  { name: 'Resources', href: '/resources' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/capabilities' },
+  { name: 'Projects', href: '/past-performance' },
   { name: 'Contact', href: '/contact' },
 ];
 

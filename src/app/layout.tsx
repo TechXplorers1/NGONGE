@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Source_Code_Pro } from 'next/font/google';
+import { Inter, Montserrat, Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Header } from '@/components/layout/Header';
@@ -8,6 +8,7 @@ import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'], variable: '--font-code' });
+const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-headline' });
 
 export const metadata: Metadata = {
   title: {
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn('min-h-screen font-body antialiased', inter.variable, sourceCodePro.variable)}>
+      <body className={cn('min-h-screen font-body antialiased', inter.variable, sourceCodePro.variable, montserrat.variable)}>
         <div className="relative flex min-h-dvh flex-col bg-background">
           <Header />
           <main className="flex-1">{children}</main>

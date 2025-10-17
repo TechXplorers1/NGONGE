@@ -17,20 +17,20 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+      <div className="container flex h-20 items-center">
+        <Link href="/" className="flex items-center space-x-2">
           <Logo />
-          <span className="font-bold sm:inline-block">NGONGE</span>
+          <span className="font-bold text-lg sm:inline-block">NGONGE</span>
         </Link>
         
-        <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex flex-1 items-center justify-center space-x-8 text-sm font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               className={cn(
-                "transition-colors hover:text-accent",
-                pathname === link.href ? "text-accent font-semibold" : "text-foreground/60"
+                "transition-colors hover:text-accent font-medium tracking-wide",
+                pathname === link.href ? "text-primary" : "text-muted-foreground"
               )}
             >
               {link.name}
@@ -38,40 +38,42 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button asChild className="hidden md:inline-flex">
+        <div className="flex items-center justify-end md:flex-1 space-x-4">
+          <Button asChild>
             <Link href="/contact">Request a Proposal</Link>
           </Button>
 
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" className="md:hidden">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Open Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="pr-0">
-              <Link href="/" className="mr-6 flex items-center space-x-2">
-                <Logo />
-                <span className="font-bold">NGONGE</span>
-              </Link>
-              <div className="flex flex-col space-y-4 mt-8">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    href={link.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={cn(
-                        "transition-colors hover:text-accent p-2 rounded-l-md",
-                        pathname === link.href ? "bg-accent text-accent-foreground" : "text-foreground"
-                    )}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          <div className="md:hidden">
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="pr-0 w-[300px]">
+                <Link href="/" className="mr-6 flex items-center space-x-2 mb-8">
+                  <Logo />
+                  <span className="font-bold">NGONGE</span>
+                </Link>
+                <div className="flex flex-col space-y-2">
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={cn(
+                          "p-3 rounded-l-md text-base font-medium",
+                          pathname === link.href ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"
+                      )}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
