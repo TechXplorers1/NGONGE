@@ -76,7 +76,7 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} legacyBehavior passHref>
+                <Link href={link.href} passHref>
                   <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(),
                     "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent",
                     pathname === link.href ? "text-primary" : "text-muted-foreground"
