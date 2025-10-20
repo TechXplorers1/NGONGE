@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { navLinks, companyCodes, contactInfo } from "@/lib/placeholder-data";
+import { companyCodes, contactInfo } from "@/lib/placeholder-data";
 import { Logo } from "./Logo";
 
 export function Footer() {
   return (
     <footer className="bg-card border-t">
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="space-y-4 md:col-span-1">
             <Link href="/" className="flex items-center space-x-2">
                 <Logo />
                 <span className="font-bold text-lg">NGONGE LLC</span>
@@ -21,19 +21,6 @@ export function Footer() {
             </div>
           </div>
           
-          <div>
-            <h3 className="font-semibold text-primary">Quick Links</h3>
-            <ul className="mt-4 space-y-2">
-              {navLinks.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent uppercase tracking-wider">
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           <div>
             <h3 className="font-semibold text-primary">Capabilities</h3>
             <ul className="mt-4 space-y-2">
