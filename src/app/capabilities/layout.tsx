@@ -22,7 +22,7 @@ export default function CapabilitiesLayout({
         imageId="page-header-capabilities"
       />
       <div className="container mx-auto py-16 sm:py-24">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-12">
           <aside className="md:col-span-1">
             <div className="sticky top-24">
               <h3 className="text-xl font-bold font-headline text-primary">Service Areas</h3>
@@ -38,14 +38,14 @@ export default function CapabilitiesLayout({
                         : "text-muted-foreground hover:bg-secondary hover:text-secondary-foreground"
                     )}
                   >
-                    {cap.title}
-                    {pathname === cap.href && <ArrowRight className="h-4 w-4" />}
+                    <span className="flex-grow">{cap.title}</span>
+                    {pathname === cap.href && <ArrowRight className="h-4 w-4 flex-shrink-0" />}
                   </Link>
                 ))}
               </nav>
             </div>
           </aside>
-          <main className="md:col-span-3 prose max-w-none prose-h2:font-headline prose-h2:text-primary prose-h2:text-3xl prose-p:text-muted-foreground">
+          <main className="md:col-span-3 prose max-w-none prose-h2:font-headline prose-h2:text-primary prose-p:text-muted-foreground">
             {children}
           </main>
         </div>

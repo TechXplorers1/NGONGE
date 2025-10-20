@@ -21,67 +21,64 @@ export const capabilities = [
         href: '/capabilities/transportation-logistics',
         description: 'Secure and efficient management of freight, supply chain, and fleet operations.',
         icon: 'Truck' as const,
-        details: 'Coordinating the movement of goods via ground, air, and sea, including specialized handling for sensitive, oversized, or hazardous materials.'
     },
     { 
         title: 'Facilities Support', 
         href: '/capabilities/facilities-support',
         description: 'Comprehensive maintenance for operational readiness and safety of government installations.',
         icon: 'Building' as const,
-        details: 'Proactive and corrective maintenance for all building systems, including HVAC, electrical, plumbing, and structural components.'
     },
     { 
         title: 'Laundry & Linen Services', 
         href: '/capabilities/laundry-linen-services',
         description: 'Specialized laundry services that meet the high standards of federal facilities.',
         icon: 'Shirt' as const,
-        details: 'Hygienically clean processing of medical, military, and institutional textiles in compliance with all regulations.'
     },
     { 
         title: 'Janitorial Services', 
-        href: '#',
+        href: '/capabilities/janitorial-services',
         description: 'Maintaining clean, safe, and healthy environments for federal facilities.',
         icon: 'Building' as const,
     },
     { 
         title: 'Septic Tank and Related Services', 
-        href: '#',
+        href: '/capabilities/septic-tank-services',
         description: 'Professional maintenance and services for septic systems.',
         icon: 'HardHat' as const,
     },
     { 
         title: 'Industrial Laundry Services', 
-        href: '#',
+        href: '/capabilities/industrial-laundry-services',
         description: 'High-volume laundry services for industrial and commercial needs.',
         icon: 'Shirt' as const,
     },
     { 
         title: 'Linen Supply', 
-        href: '#',
+        href: '/capabilities/linen-supply',
         description: 'Reliable linen supply and inventory management for various institutions.',
         icon: 'Shirt' as const,
     },
     { 
         title: 'Drycleaning and Laundry Services', 
-        href: '#',
+        href: '/capabilities/drycleaning-laundry-services',
         description: 'Professional drycleaning and laundry for non-coin-operated facilities.',
         icon: 'Shirt' as const,
     },
     { 
         title: 'Charter Bus Industry', 
-        href: '#',
+        href: '/capabilities/charter-bus-industry',
         description: 'Charter bus services for personnel and group transportation.',
         icon: 'Truck' as const,
     },
     {
         title: 'Specialized Freight',
-        href: '#',
+        href: '/capabilities/specialized-freight',
         description: 'Specialized freight transport for household and office goods.',
         icon: 'Truck' as const,
     },
     {
         title: 'Commercial & Industrial Equipment Leasing',
-        href: '#',
+        href: '/capabilities/equipment-leasing',
         description: 'Rental and leasing of other commercial and industrial machinery and equipment.',
         icon: 'HardHat' as const,
     }
