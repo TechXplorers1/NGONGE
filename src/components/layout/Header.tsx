@@ -29,20 +29,19 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <Link href={href!} legacyBehavior passHref>
-            <a
-            ref={ref}
-            className={cn(
-                "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-                className
-            )}
-            {...props}
-            >
-            <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                {children}
-            </p>
-            </a>
+        <Link
+          href={href!}
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
         </Link>
       </NavigationMenuLink>
     </li>
@@ -79,17 +78,18 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} passHref legacyBehavior>
-                  <NavigationMenuLink asChild active={pathname === link.href} className={cn(
+                <Link href={link.href} passHref legacyBehavior={false}>
+                  <NavigationMenuLink
+                    active={pathname === link.href}
+                    className={cn(
                       navigationMenuTriggerStyle(),
                       "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
                       pathname === link.href
                         ? "text-primary"
                         : "text-muted-foreground"
-                    )}>
-                      <a>
-                        {link.name}
-                      </a>
+                    )}
+                  >
+                    {link.name}
                   </NavigationMenuLink>
                 </Link>
               )}
@@ -131,12 +131,12 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="pr-0 w-[300px]">
-                <SheetHeader className="p-4 flex-row items-center space-y-0">
-                  <Link href="/" className="flex items-center space-x-2">
+                <SheetHeader>
+                   <SheetTitle className="sr-only">Main Menu</SheetTitle>
+                   <Link href="/" className="flex items-center space-x-2 p-4">
                     <Logo />
                     <span className="font-bold">NGONGE</span>
                   </Link>
-                  <SheetTitle className="sr-only">Main Menu</SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col space-y-2 mt-4">
                   {navLinks.map((link) => (
