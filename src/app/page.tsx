@@ -27,7 +27,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
             Mission-Critical Federal Solutions
           </h1>
-          <p className="mt-4 max-w-2xl text-base md:text-xl drop-shadow">
+          <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow">
             NGONGE delivers unparalleled logistics, facility support, and IT modernization to ensure your agency's success.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">

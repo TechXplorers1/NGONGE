@@ -8,7 +8,7 @@ import { Menu } from "lucide-react";
 import React from "react";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { navLinks, capabilities } from "@/lib/placeholder-data";
 import { Logo } from "./Logo";
@@ -78,15 +78,18 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} passHref>
-                  <NavigationMenuLink asChild active={pathname === link.href} className={cn(
+                <Link href={link.href} passHref asChild>
+                  <NavigationMenuLink
+                    active={pathname === link.href}
+                    className={cn(
                       navigationMenuTriggerStyle(),
                       "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
                       pathname === link.href
                         ? "text-primary"
                         : "text-muted-foreground"
-                    )}>
-                        {link.name}
+                    )}
+                  >
+                    {link.name}
                   </NavigationMenuLink>
                 </Link>
               )}
@@ -115,7 +118,7 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button asChild className="hidden sm:inline-flex">
+          <Button asChild className="hidden md:inline-flex">
             <Link href="/contact">Request a Proposal</Link>
           </Button>
 
@@ -128,11 +131,14 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="pr-0 w-[300px]">
-                <Link href="/" className="mr-6 flex items-center space-x-2 mb-8">
-                  <Logo />
-                  <span className="font-bold">NGONGE</span>
-                </Link>
-                <div className="flex flex-col space-y-2">
+                <SheetHeader className="p-4 flex-row items-center space-y-0">
+                  <Link href="/" className="flex items-center space-x-2">
+                    <Logo />
+                    <span className="font-bold">NGONGE</span>
+                  </Link>
+                  <SheetTitle className="sr-only">Main Menu</SheetTitle>
+                </SheetHeader>
+                <div className="flex flex-col space-y-2 mt-4">
                   {navLinks.map((link) => (
                     <Link
                       key={link.name}
