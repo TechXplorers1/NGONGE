@@ -76,7 +76,7 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} passHref>
+                <Link href={link.href} legacyBehavior passHref>
                   <NavigationMenuLink active={pathname === link.href} className={cn(
                       navigationMenuTriggerStyle(),
                       "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent",
@@ -100,16 +100,16 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
       <div className="container flex h-20 items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Logo />
           <span className="font-bold text-lg sm:inline-block">NGONGE</span>
         </Link>
         
-        <nav className="hidden md:flex flex-1 items-center justify-center space-x-2 text-sm font-medium">
+        <div className="hidden md:flex flex-1 items-center justify-center">
           <NavMenu />
-        </nav>
+        </div>
 
         <div className="flex items-center justify-end md:flex-1 space-x-4">
           <Button asChild>
