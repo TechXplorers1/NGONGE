@@ -17,25 +17,67 @@ export const trustIndicators = [
 
 export const capabilities = [
     { 
-        title: 'Transportation & Logistics', 
-        href: '/capabilities/transportation-logistics',
-        description: 'Comprehensive logistics and supply chain management to ensure timely and secure delivery for mission-critical operations.',
-        icon: 'Truck' as const,
-        details: 'We offer a full spectrum of transportation and logistics services, including freight management, fleet operations, and supply chain optimization. Our advanced tracking systems and experienced personnel guarantee that your assets are managed efficiently and securely from origin to destination.'
+        title: 'Cyber Security', 
+        href: '#',
+        description: 'Protecting digital assets and infrastructure from cyber threats.',
+        icon: 'ShieldCheck' as const,
+        details: 'Comprehensive cyber security solutions to safeguard your organization\'s data and systems.'
     },
     { 
-        title: 'Facilities Support', 
-        href: '/capabilities/facilities-support',
-        description: 'Integrated facility management solutions to maintain operational readiness and safety of government installations.',
-        icon: 'Building' as const,
-        details: 'Our facilities support services cover everything from routine maintenance and custodial services to complex infrastructure projects. We ensure that federal facilities are safe, clean, and fully operational, allowing agencies to focus on their core missions.'
+        title: 'Medical Coding', 
+        href: '#',
+        description: 'Accurate and compliant medical coding services for the healthcare industry.',
+        icon: 'FileText' as const,
+        details: 'Expert medical coding to ensure proper billing and compliance.'
     },
     { 
-        title: 'Laundry & Linen Services', 
-        href: '/capabilities/laundry-linen-services',
-        description: 'Specialized laundry and linen services for federal healthcare, military, and institutional facilities.',
-        icon: 'Shirt' as const,
-        details: 'NGONGE provides high-volume, hygienically clean laundry and linen services that meet the stringent standards of federal agencies. We handle a wide range of textiles with precision and care, ensuring a reliable supply for healthcare and barracks environments.'
+        title: 'Web Development', 
+        href: '#',
+        description: 'Building modern, responsive, and secure websites.',
+        icon: 'FileText' as const,
+        details: 'End-to-end web development services to create a powerful online presence.'
+    },
+    { 
+        title: 'APP Development', 
+        href: '#',
+        description: 'Creating custom mobile applications for iOS and Android.',
+        icon: 'FileText' as const,
+        details: 'Custom mobile app development to meet your business needs.'
+    },
+    { 
+        title: 'Cloud Computing', 
+        href: '#',
+        description: 'Leveraging the power of the cloud for scalability and efficiency.',
+        icon: 'FileText' as const,
+        details: 'Cloud solutions to help you scale your infrastructure and services.'
+    },
+    { 
+        title: 'QA & Testing', 
+        href: '#',
+        description: 'Ensuring software quality through rigorous testing processes.',
+        icon: 'FileText' as const,
+        details: 'Comprehensive QA and testing services to deliver bug-free software.'
+    },
+    { 
+        title: 'Data Analytics', 
+        href: '#',
+        description: 'Turning data into actionable insights for better decision-making.',
+        icon: 'FileText' as const,
+        details: 'Advanced data analytics to unlock the value of your data.'
+    },
+    { 
+        title: 'UX/UI Design', 
+        href: '#',
+        description: 'Designing intuitive and engaging user experiences.',
+        icon: 'FileText' as const,
+        details: 'Creative UX/UI design to make your applications user-friendly and beautiful.'
+    },
+    { 
+        title: 'SAS Services', 
+        href: '#',
+        description: 'Providing expert SAS programming and statistical analysis.',
+        icon: 'FileText' as const,
+        details: 'SAS services for data management, analysis, and reporting.'
     },
 ];
 
