@@ -25,7 +25,7 @@ import {
 
 const ListItem = React.forwardRef<
   HTMLAnchorElement,
-  React.ComponentPropsWithoutRef<typeof Link> & { title: string, className?: string, children?: React.ReactNode }
+  React.ComponentPropsWithoutRef<"a"> & { title: string, href: string }
 >(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
@@ -99,20 +99,20 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <NavigationMenuLink asChild active={pathname === link.href}>
-                    <Link
-                      href={link.href}
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                        pathname === link.href
-                          ? "text-primary"
-                          : "text-muted-foreground"
-                      )}
-                    >
-                      {link.name}
-                    </Link>
-                </NavigationMenuLink>
+                <Link href={link.href} passHref legacyBehavior>
+                  <NavigationMenuLink
+                    active={pathname === link.href}
+                    className={cn(
+                      navigationMenuTriggerStyle(),
+                      "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                      pathname === link.href
+                        ? "text-primary"
+                        : "text-muted-foreground"
+                    )}
+                  >
+                    {link.name}
+                  </NavigationMenuLink>
+                </Link>
               )}
           </NavigationMenuItem>
         ))}
