@@ -99,7 +99,7 @@ function NavMenu() {
                 </>
               ) : (
                 <Link href={link.href} passHref>
-                  <NavigationMenuLink
+                  <NavigationMenuLink asChild
                     active={pathname === link.href}
                     className={cn(
                       navigationMenuTriggerStyle(),
@@ -109,7 +109,7 @@ function NavMenu() {
                         : "text-muted-foreground"
                     )}
                   >
-                    {link.name}
+                    <a>{link.name}</a>
                   </NavigationMenuLink>
                 </Link>
               )}
