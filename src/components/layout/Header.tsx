@@ -98,7 +98,7 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} legacyBehavior passHref>
+                <Link href={link.href}>
                   <NavigationMenuLink
                     active={pathname === link.href}
                     className={cn(
