@@ -22,30 +22,8 @@ export default function CapabilitiesLayout({
         imageId="page-header-capabilities"
       />
       <div className="container mx-auto py-16 sm:py-24">
-        <div className="grid md:grid-cols-4 gap-12">
-          <aside className="md:col-span-1">
-            <div className="sticky top-24">
-              <h3 className="text-xl font-bold font-headline text-primary">Service Areas</h3>
-              <nav className="mt-4 flex flex-col space-y-1">
-                {capabilities.map((cap) => (
-                  <Link
-                    key={cap.title}
-                    href={cap.href}
-                    className={cn(
-                      "flex justify-between items-center p-3 rounded-md text-sm font-medium transition-colors",
-                      pathname === cap.href
-                        ? "bg-primary text-primary-foreground"
-                        : "text-muted-foreground hover:bg-secondary hover:text-secondary-foreground"
-                    )}
-                  >
-                    <span className="flex-grow">{cap.title}</span>
-                    {pathname === cap.href && <ArrowRight className="h-4 w-4 flex-shrink-0" />}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </aside>
-          <main className="md:col-span-3 prose max-w-none prose-h2:font-headline prose-h2:text-primary prose-p:text-muted-foreground">
+        <div className="grid grid-cols-1">
+          <main className="prose max-w-none prose-h2:font-headline prose-h2:text-primary prose-p:text-muted-foreground">
             {children}
           </main>
         </div>
