@@ -8,7 +8,6 @@ const iconMap = {
     Building: Building,
     Shirt: Shirt,
     HardHat: HardHat,
-    default: HardHat
 }
 
 export default function CapabilitiesPage() {
@@ -20,7 +19,7 @@ export default function CapabilitiesPage() {
       </p>
        <div className="not-prose mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {capabilities.map((cap) => {
-              const Icon = iconMap[cap.icon as keyof typeof iconMap] || iconMap.default;
+              const Icon = iconMap[cap.icon as keyof typeof iconMap] || Truck;
               return (
               <Link href={cap.href} key={cap.title} className="group">
                 <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
