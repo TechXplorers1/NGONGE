@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu } from "lucide-react";
+import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -19,7 +20,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import React from "react";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -76,13 +76,15 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} legacyBehavior={false}>
-                  <NavigationMenuLink active={pathname === link.href} className={cn(
+                <Link href={link.href} passHref>
+                  <NavigationMenuLink asChild active={pathname === link.href} className={cn(
                       navigationMenuTriggerStyle(),
                       "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent",
                       pathname === link.href ? "text-primary" : "text-muted-foreground"
                     )}>
-                      {link.name}
+                      <a>
+                        {link.name}
+                      </a>
                   </NavigationMenuLink>
                 </Link>
               )
