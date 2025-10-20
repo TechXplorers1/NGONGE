@@ -97,9 +97,29 @@ export const industries = [
         icon: 'ShieldCheck' as const,
     },
     {
-        title: 'Healthcare',
+        title: 'Health Care',
         description: 'Offering specialized linen, laundry, and facility services for federal healthcare systems like the VHA.',
         icon: 'Star' as const,
+    },
+    {
+        title: 'Manufacturing',
+        description: 'Providing industrial laundry and equipment leasing to support manufacturing operations.',
+        icon: 'Truck' as const,
+    },
+    {
+        title: 'Finance & Banking',
+        description: 'Secure janitorial and facility support for financial institutions.',
+        icon: 'Building' as const,
+    },
+    {
+        title: 'Automotive',
+        description: 'Specialized freight and industrial laundry services for the automotive sector.',
+        icon: 'Truck' as const,
+    },
+    {
+        title: 'Media and Advertising',
+        description: 'Equipment leasing and logistics for media production and advertising events.',
+        icon: 'HardHat' as const,
     },
     {
         title: 'Commercial Sector',
