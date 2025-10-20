@@ -21,9 +21,9 @@ export default function CertificationsPage() {
         </div>
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {certifications.map((cert) => (
-            <Card key={cert.name} className="flex flex-col items-center text-center">
+            <Card key={cert.name} className="flex flex-col items-center text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
               <CardHeader>
-                <div className="mx-auto bg-primary text-primary-foreground rounded-full p-4 w-fit">
+                <div className="mx-auto bg-primary text-primary-foreground rounded-full p-4 w-fit transition-colors group-hover:bg-accent">
                     <cert.icon className="h-8 w-8" />
                 </div>
                 <CardTitle className="pt-4 font-headline">{cert.name}</CardTitle>
@@ -32,7 +32,7 @@ export default function CertificationsPage() {
                 <CardDescription>{cert.description}</CardDescription>
               </CardContent>
               <CardContent className="w-full">
-                <Button asChild variant="outline" className="w-full border-accent text-accent hover:bg-accent/10 hover:text-accent">
+                <Button asChild variant="outline" className="w-full border-accent text-accent hover:bg-accent/10 hover:text-accent transition-transform hover:scale-105">
                     <a href={cert.downloadUrl} download>
                         <Download className="mr-2 h-4 w-4" />
                         Download PDF

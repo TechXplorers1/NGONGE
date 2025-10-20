@@ -62,7 +62,7 @@ export default function AboutPage() {
             {leadershipTeam.map((leader) => {
               const leaderImage = PlaceHolderImages.find((img) => img.id === leader.imageId);
               return (
-                <Card key={leader.name} className="text-center">
+                <Card key={leader.name} className="text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                   <CardContent className="pt-6">
                     {leaderImage && (
                       <div className="relative h-32 w-32 rounded-full mx-auto mb-4 overflow-hidden">
@@ -118,7 +118,7 @@ export default function AboutPage() {
         <section id="codes" className="text-center">
              <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Company Information</h2>
              <div className="mt-6 flex justify-center gap-8">
-                <Card className="p-6">
+                <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                     <CardHeader className="p-0">
                         <CardTitle className="text-lg text-muted-foreground">DUNS Number</CardTitle>
                     </CardHeader>
@@ -126,7 +126,7 @@ export default function AboutPage() {
                         <p className="text-2xl font-bold font-code text-primary">{companyCodes.duns}</p>
                     </CardContent>
                 </Card>
-                <Card className="p-6">
+                <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                      <CardHeader className="p-0">
                         <CardTitle className="text-lg text-muted-foreground">CAGE Code</CardTitle>
                     </CardHeader>

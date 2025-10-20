@@ -98,8 +98,8 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} passHref>
-                  <NavigationMenuLink asChild
+                <Link href={link.href} legacyBehavior passHref>
+                  <NavigationMenuLink
                     active={pathname === link.href}
                     className={cn(
                       navigationMenuTriggerStyle(),
@@ -109,7 +109,7 @@ function NavMenu() {
                         : "text-muted-foreground"
                     )}
                   >
-                    <a>{link.name}</a>
+                    {link.name}
                   </NavigationMenuLink>
                 </Link>
               )}
@@ -138,7 +138,7 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button asChild className="hidden md:inline-flex">
+          <Button asChild className="hidden md:inline-flex transition-transform hover:scale-105">
             <Link href="/contact">Request a Proposal</Link>
           </Button>
 

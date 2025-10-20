@@ -24,17 +24,17 @@ export default function Home() {
         )}
         <div className="absolute inset-0 bg-primary/70" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground px-4">
-          <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg animate-fade-in-up">
             Mission-Critical Federal Solutions
           </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow">
+          <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow animate-fade-in-up [animation-delay:0.2s]">
             NGONGE delivers unparalleled logistics, facility support, and IT modernization to ensure your agency's success.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up [animation-delay:0.4s]">
+            <Button asChild size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform hover:scale-105">
               <Link href="/resources">Download Capability Statement</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10">
+            <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10 transition-transform hover:scale-105">
               <Link href="/contact">Request a Proposal</Link>
             </Button>
           </div>
@@ -47,8 +47,8 @@ export default function Home() {
             Trusted by Federal Agencies
           </h3>
           <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            {trustIndicators.map((indicator) => (
-              <div key={indicator.name} className="flex justify-center">
+            {trustIndicators.map((indicator, i) => (
+              <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
                 <span className="font-bold text-base md:text-lg text-primary/80">{indicator.name}</span>
               </div>
             ))}
@@ -64,26 +64,28 @@ export default function Home() {
           </p>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             {capabilities.slice(0, 3).map((cap) => (
-              <Card key={cap.title} className="flex flex-col">
-                <CardHeader>
-                  <div className="flex items-center gap-4">
-                    <div className="bg-primary text-primary-foreground p-3 rounded-full">
-                      {cap.icon === 'Truck' && <Truck className="h-6 w-6" />}
-                      {cap.icon === 'Building' && <Building className="h-6 w-6" />}
-                      {cap.icon === 'Shirt' && <Shirt className="h-6 w-6" />}
+              <Link key={cap.title} href={cap.href} className="group block">
+                <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+                  <CardHeader>
+                    <div className="flex items-center gap-4">
+                      <div className="bg-primary text-primary-foreground p-3 rounded-full transition-colors group-hover:bg-accent">
+                        {cap.icon === 'Truck' && <Truck className="h-6 w-6" />}
+                        {cap.icon === 'Building' && <Building className="h-6 w-6" />}
+                        {cap.icon === 'Shirt' && <Shirt className="h-6 w-6" />}
+                      </div>
+                      <CardTitle className="text-xl font-headline">{cap.title}</CardTitle>
                     </div>
-                    <CardTitle className="text-xl font-headline">{cap.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <CardDescription>{cap.description}</CardDescription>
-                </CardContent>
-                <CardContent>
-                  <Button asChild variant="link" className="p-0 text-accent">
-                    <Link href={cap.href}>Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                  </Button>
-                </CardContent>
-              </Card>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <CardDescription>{cap.description}</CardDescription>
+                  </CardContent>
+                  <CardContent>
+                    <div className="flex items-center text-accent font-semibold text-sm">
+                      Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -101,14 +103,14 @@ export default function Home() {
             {caseStudies.slice(0, 3).map((study, index) => {
               const studyImage = PlaceHolderImages.find(p => p.id === study.imageId);
               return (
-                <Card key={index} className="overflow-hidden">
+                <Card key={index} className="overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                   {studyImage && (
-                    <div className="relative h-48 w-full">
+                    <div className="relative h-48 w-full overflow-hidden">
                       <Image
                         src={studyImage.imageUrl}
                         alt={study.problem}
                         fill
-                        className="object-cover"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                         data-ai-hint={studyImage.imageHint}
                       />
                     </div>
@@ -126,7 +128,7 @@ export default function Home() {
             })}
           </div>
           <div className="mt-12 text-center">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="transition-transform hover:scale-105">
               <Link href="/past-performance">Explore All Case Studies</Link>
             </Button>
           </div>

@@ -25,9 +25,9 @@ export default function ResourcesPage() {
             </div>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {resources.map((resource) => (
-                    <Card key={resource.title} className="flex flex-col">
+                    <Card key={resource.title} className="flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                         <CardHeader className="flex-row items-center gap-4">
-                            <resource.icon className="h-10 w-10 text-accent" />
+                            <resource.icon className="h-10 w-10 text-accent transition-transform group-hover:scale-110" />
                             <div>
                                 <CardTitle className="font-headline">{resource.title}</CardTitle>
                             </div>
@@ -36,7 +36,7 @@ export default function ResourcesPage() {
                             <CardDescription>{resource.description}</CardDescription>
                         </CardContent>
                         <CardFooter>
-                            <Button asChild className="w-full">
+                            <Button asChild className="w-full transition-transform hover:scale-105">
                                 <a href={resource.downloadUrl} download>
                                     <Download className="mr-2 h-4 w-4" />
                                     Download
@@ -59,14 +59,15 @@ export default function ResourcesPage() {
             {blogPosts.map((post) => {
               const postImage = PlaceHolderImages.find(p => p.id === post.imageId);
               return (
-                <Card key={post.slug} className="flex flex-col overflow-hidden">
+                <Link key={post.slug} href="#" className="group block">
+                <Card className="flex flex-col overflow-hidden h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                     {postImage && (
-                        <div className="relative h-48 w-full">
+                        <div className="relative h-48 w-full overflow-hidden">
                             <Image
                                 src={postImage.imageUrl}
                                 alt={post.title}
                                 fill
-                                className="object-cover"
+                                className="object-cover transition-transform duration-300 group-hover:scale-105"
                                 data-ai-hint={postImage.imageHint}
                             />
                         </div>
@@ -81,11 +82,12 @@ export default function ResourcesPage() {
                     <p className="text-muted-foreground">{post.excerpt}</p>
                   </CardContent>
                   <CardFooter>
-                    <Button asChild variant="link" className="p-0 text-accent">
-                        <Link href="#">Read More <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                    </Button>
+                    <div className="flex items-center text-accent font-semibold text-sm">
+                        Read More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </div>
                   </CardFooter>
                 </Card>
+                </Link>
               );
             })}
           </div>

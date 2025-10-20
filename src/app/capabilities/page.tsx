@@ -39,9 +39,9 @@ export default function CapabilitiesPage() {
                     <CarouselItem key={cap.title} className="basis-full md:basis-1/2 lg:basis-1/3">
                        <div className="p-1 h-full">
                         <Link href={cap.href} className="group h-full block">
-                          <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
+                          <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                             <CardHeader className="flex-row items-center gap-4">
-                              <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                              <div className="bg-primary text-primary-foreground p-3 rounded-full transition-colors group-hover:bg-accent">
                                 <Icon className="h-6 w-6" />
                               </div>
                               <CardTitle className="text-xl font-headline leading-tight">{cap.title}</CardTitle>
