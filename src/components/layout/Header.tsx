@@ -24,7 +24,7 @@ import {
 
 const ListItem = React.forwardRef<
   HTMLAnchorElement,
-  React.ComponentPropsWithoutRef<"a"> & { title: string; children: React.ReactNode }
+  React.ComponentPropsWithoutRef<typeof Link> & { title: string; children: React.ReactNode }
 >(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
@@ -98,7 +98,7 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} legacyBehavior={false}>
+                <Link href={link.href} legacyBehavior passHref>
                   <NavigationMenuLink
                     active={pathname === link.href}
                     className={cn(
