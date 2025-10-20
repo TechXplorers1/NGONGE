@@ -2,6 +2,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { capabilities } from "@/lib/placeholder-data";
 import { ArrowRight, Building, HardHat, Shirt, Truck } from "lucide-react";
 import Link from "next/link";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const iconMap = {
     Truck: Truck,
@@ -17,29 +24,46 @@ export default function CapabilitiesPage() {
       <p>
         NGONGE LLC offers a diverse range of services designed to meet the complex needs of modern federal agencies. Our team of experts is equipped to handle challenges in logistics, facility management, and beyond, ensuring that your operations run smoothly and efficiently. Our approach is built on a foundation of reliability, security, and innovation.
       </p>
-       <div className="not-prose mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {capabilities.map((cap) => {
-              const Icon = iconMap[cap.icon as keyof typeof iconMap] || Truck;
-              return (
-              <Link href={cap.href} key={cap.title} className="group">
-                <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
-                  <CardHeader className="flex-row items-center gap-4">
-                    <div className="bg-primary text-primary-foreground p-3 rounded-full">
-                      <Icon className="h-6 w-6" />
-                    </div>
-                    <CardTitle className="text-xl font-headline leading-tight">{cap.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <CardDescription>{cap.description}</CardDescription>
-                  </CardContent>
-                  <CardContent>
-                    <div className="flex items-center text-accent font-semibold text-sm">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            )})}
+       <div className="not-prose mt-12">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {capabilities.map((cap) => {
+                  const Icon = iconMap[cap.icon as keyof typeof iconMap] || Truck;
+                  return (
+                    <CarouselItem key={cap.title} className="md:basis-1/2 lg:basis-1/3">
+                       <div className="p-1 h-full">
+                        <Link href={cap.href} className="group h-full">
+                          <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
+                            <CardHeader className="flex-row items-center gap-4">
+                              <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                                <Icon className="h-6 w-6" />
+                              </div>
+                              <CardTitle className="text-xl font-headline leading-tight">{cap.title}</CardTitle>
+                            </CardHeader>
+                            <CardContent className="flex-grow">
+                              <CardDescription>{cap.description}</CardDescription>
+                            </CardContent>
+                            <CardContent>
+                              <div className="flex items-center text-accent font-semibold text-sm">
+                                  Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                              </div>
+                            </CardContent>
+                          </Card>
+                        </Link>
+                      </div>
+                    </CarouselItem>
+                  )
+                })}
+              </CarouselContent>
+              <CarouselPrevious className="ml-8" />
+              <CarouselNext className="mr-8" />
+            </Carousel>
         </div>
     </article>
   );
