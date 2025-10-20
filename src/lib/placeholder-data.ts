@@ -17,68 +17,74 @@ export const trustIndicators = [
 
 export const capabilities = [
     { 
-        title: 'Cyber Security', 
-        href: '#',
-        description: 'Protecting digital assets and infrastructure from cyber threats.',
-        icon: 'ShieldCheck' as const,
-        details: 'Comprehensive cyber security solutions to safeguard your organization\'s data and systems.'
+        title: 'Transportation & Logistics', 
+        href: '/capabilities/transportation-logistics',
+        description: 'Secure and efficient management of freight, supply chain, and fleet operations.',
+        icon: 'Truck' as const,
+        details: 'Coordinating the movement of goods via ground, air, and sea, including specialized handling for sensitive, oversized, or hazardous materials.'
     },
     { 
-        title: 'Medical Coding', 
-        href: '#',
-        description: 'Accurate and compliant medical coding services for the healthcare industry.',
-        icon: 'FileText' as const,
-        details: 'Expert medical coding to ensure proper billing and compliance.'
+        title: 'Facilities Support', 
+        href: '/capabilities/facilities-support',
+        description: 'Comprehensive maintenance for operational readiness and safety of government installations.',
+        icon: 'Building' as const,
+        details: 'Proactive and corrective maintenance for all building systems, including HVAC, electrical, plumbing, and structural components.'
     },
     { 
-        title: 'Web Development', 
-        href: '#',
-        description: 'Building modern, responsive, and secure websites.',
-        icon: 'FileText' as const,
-        details: 'End-to-end web development services to create a powerful online presence.'
+        title: 'Laundry & Linen Services', 
+        href: '/capabilities/laundry-linen-services',
+        description: 'Specialized laundry services that meet the high standards of federal facilities.',
+        icon: 'Shirt' as const,
+        details: 'Hygienically clean processing of medical, military, and institutional textiles in compliance with all regulations.'
     },
     { 
-        title: 'APP Development', 
+        title: '561720 - Janitorial Services', 
         href: '#',
-        description: 'Creating custom mobile applications for iOS and Android.',
-        icon: 'FileText' as const,
-        details: 'Custom mobile app development to meet your business needs.'
+        description: 'Maintaining clean, safe, and healthy environments for federal facilities.',
+        icon: 'Building' as const,
     },
     { 
-        title: 'Cloud Computing', 
+        title: '562991 - Septic Tank and Related Services', 
         href: '#',
-        description: 'Leveraging the power of the cloud for scalability and efficiency.',
-        icon: 'FileText' as const,
-        details: 'Cloud solutions to help you scale your infrastructure and services.'
+        description: 'Professional maintenance and services for septic systems.',
+        icon: 'HardHat' as const,
     },
     { 
-        title: 'QA & Testing', 
+        title: '812332 - Industrial Laundry Services', 
         href: '#',
-        description: 'Ensuring software quality through rigorous testing processes.',
-        icon: 'FileText' as const,
-        details: 'Comprehensive QA and testing services to deliver bug-free software.'
+        description: 'High-volume laundry services for industrial and commercial needs.',
+        icon: 'Shirt' as const,
     },
     { 
-        title: 'Data Analytics', 
+        title: '812331 - Linen Supply', 
         href: '#',
-        description: 'Turning data into actionable insights for better decision-making.',
-        icon: 'FileText' as const,
-        details: 'Advanced data analytics to unlock the value of your data.'
+        description: 'Reliable linen supply and inventory management for various institutions.',
+        icon: 'Shirt' as const,
     },
     { 
-        title: 'UX/UI Design', 
+        title: '812320 - Drycleaning and Laundry Services', 
         href: '#',
-        description: 'Designing intuitive and engaging user experiences.',
-        icon: 'FileText' as const,
-        details: 'Creative UX/UI design to make your applications user-friendly and beautiful.'
+        description: 'Professional drycleaning and laundry for non-coin-operated facilities.',
+        icon: 'Shirt' as const,
     },
     { 
-        title: 'SAS Services', 
+        title: '485510 - Charter Bus Industry', 
         href: '#',
-        description: 'Providing expert SAS programming and statistical analysis.',
-        icon: 'FileText' as const,
-        details: 'SAS services for data management, analysis, and reporting.'
+        description: 'Charter bus services for personnel and group transportation.',
+        icon: 'Truck' as const,
     },
+    {
+        title: '484230 - Specialized Freight',
+        href: '#',
+        description: 'Specialized freight transport for household and office goods.',
+        icon: 'Truck' as const,
+    },
+    {
+        title: '532490 - Commercial & Industrial Equipment Leasing',
+        href: '#',
+        description: 'Rental and leasing of other commercial and industrial machinery and equipment.',
+        icon: 'HardHat' as const,
+    }
 ];
 
 export const caseStudies = [
