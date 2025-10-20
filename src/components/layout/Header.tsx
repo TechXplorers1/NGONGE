@@ -79,15 +79,13 @@ function NavMenu() {
                 </>
               ) : (
                 <Link href={link.href} passHref>
-                  <NavigationMenuLink
-                    className={cn(
+                  <NavigationMenuLink asChild active={pathname === link.href} className={cn(
                       navigationMenuTriggerStyle(),
                       "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
                       pathname === link.href
                         ? "text-primary"
                         : "text-muted-foreground"
-                    )}
-                    active={pathname === link.href}>
+                    )}>
                         {link.name}
                   </NavigationMenuLink>
                 </Link>
