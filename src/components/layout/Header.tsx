@@ -97,20 +97,20 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} legacyBehavior={false} passHref>
-                  <NavigationMenuLink
-                    active={pathname === link.href}
+                <NavigationMenuLink asChild active={pathname === link.href}>
+                  <Link
+                    href={link.href}
                     className={cn(
-                        navigationMenuTriggerStyle(),
-                        "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                        pathname === link.href
-                          ? "text-primary"
-                          : "text-muted-foreground"
-                      )}
-                    >
-                      {link.name}
-                    </NavigationMenuLink>
-                </Link>
+                      navigationMenuTriggerStyle(),
+                      "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                      pathname === link.href
+                        ? "text-primary"
+                        : "text-muted-foreground"
+                    )}
+                  >
+                    {link.name}
+                  </Link>
+                </NavigationMenuLink>
               )}
           </NavigationMenuItem>
         ))}
@@ -127,7 +127,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
       <div className="container flex h-20 items-center">
-        <Link href="/" className="flex items-center space-x-2 mr-6">
+        <Link href="/" className="flex items-center space-x-2 mr-6 transition-transform hover:scale-105">
           <Logo />
           <span className="font-bold text-lg sm:inline-block">NGONGE</span>
         </Link>
