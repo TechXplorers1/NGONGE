@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import Link from "next/link";
@@ -24,8 +23,8 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
+  React.ElementRef<typeof Link>,
+  React.ComponentPropsWithoutRef<typeof Link> & { title: string; children: React.ReactNode }
 >(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
@@ -99,7 +98,7 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} passHref legacyBehavior>
+                <Link href={link.href} legacyBehavior={false}>
                   <NavigationMenuLink
                     active={pathname === link.href}
                     className={cn(
