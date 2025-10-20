@@ -47,7 +47,7 @@ export function Footer() {
         </div>
         
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} NGONGE LLC. All Rights Reserved. | <a href="#" className="hover:text-accent">Accessibility Statement</a></p>
+          <p>&copy; {new Date().getFullYear()} NGONGE LLC. All Rights Reserved. | <Link href="#" className="hover:text-accent">Accessibility Statement</Link></p>
         </div>
       </div>
     </footer>

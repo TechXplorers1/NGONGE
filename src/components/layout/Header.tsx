@@ -25,28 +25,24 @@ import {
 
 const ListItem = React.forwardRef<
   HTMLAnchorElement,
-  React.ComponentPropsWithoutRef<"a"> & { title: string }
+  React.ComponentPropsWithoutRef<typeof Link> & { title: string, className?: string, children?: React.ReactNode }
 >(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
-          href={href!}
-          legacyBehavior passHref
+          href={href}
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
         >
-            <a
-              ref={ref}
-              className={cn(
-                "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-                className
-              )}
-              {...props}
-            >
-              <div className="text-sm font-medium leading-none">{title}</div>
-              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                {children}
-              </p>
-            </a>
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
         </Link>
       </NavigationMenuLink>
     </li>
@@ -103,8 +99,8 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <Link href={link.href} legacyBehavior passHref>
-                  <NavigationMenuLink asChild
+                <Link href={link.href} passHref>
+                  <NavigationMenuLink
                     active={pathname === link.href}
                     className={cn(
                       navigationMenuTriggerStyle(),
@@ -114,7 +110,7 @@ function NavMenu() {
                         : "text-muted-foreground"
                     )}
                   >
-                    <a>{link.name}</a>
+                    {link.name}
                   </NavigationMenuLink>
                 </Link>
               )}
