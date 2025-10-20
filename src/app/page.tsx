@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] md:h-[80vh] w-full">
+      <section className="relative h-[70vh] md:h-[80vh] w-full">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -27,7 +27,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
             Mission-Critical Federal Solutions
           </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow">
+          <p className="mt-4 max-w-2xl text-base md:text-xl drop-shadow">
             NGONGE delivers unparalleled logistics, facility support, and IT modernization to ensure your agency's success.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -49,7 +49,7 @@ export default function Home() {
           <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             {trustIndicators.map((indicator) => (
               <div key={indicator.name} className="flex justify-center">
-                <span className="font-bold text-lg text-primary/80">{indicator.name}</span>
+                <span className="font-bold text-base md:text-lg text-primary/80">{indicator.name}</span>
               </div>
             ))}
           </div>

@@ -36,7 +36,7 @@ export default function CapabilitiesPage() {
                 {capabilities.map((cap) => {
                   const Icon = iconMap[cap.icon as keyof typeof iconMap] || Truck;
                   return (
-                    <CarouselItem key={cap.title} className="md:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={cap.title} className="basis-full md:basis-1/2 lg:basis-1/3">
                        <div className="p-1 h-full">
                         <Link href={cap.href} className="group h-full">
                           <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
@@ -61,8 +61,8 @@ export default function CapabilitiesPage() {
                   )
                 })}
               </CarouselContent>
-              <CarouselPrevious className="ml-8" />
-              <CarouselNext className="mr-8" />
+              <CarouselPrevious className="ml-8 hidden sm:flex" />
+              <CarouselNext className="mr-8 hidden sm:flex" />
             </Carousel>
         </div>
     </article>
