@@ -3,103 +3,109 @@
     {
       "id": "hero-banner",
       "description": "Hero banner showing a federal building at dusk",
-      "imageUrl": "https://picsum.photos/seed/ngonge-hero/1920/1080",
+      "imageUrl": "https://images.unsplash.com/photo-1721486214643-d0ee6ccc14e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZWRlcmFsJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzYwOTQ0OTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "federal building"
     },
     {
       "id": "page-header-about",
       "description": "Abstract image for about us page header",
-      "imageUrl": "https://picsum.photos/seed/about-header/1200/300",
+      "imageUrl": "https://images.unsplash.com/photo-1604328702728-d26d2062c20b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxvZmZpY2UlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjA4NTgzNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "office interior"
     },
     {
       "id": "page-header-capabilities",
       "description": "Abstract image for capabilities page header",
-      "imageUrl": "https://picsum.photos/seed/capabilities-header/1200/300",
+      "imageUrl": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dpc3RpY3MlMjB3YXJlaG91c2V8ZW58MHx8fHwxNzYwODQ1MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "logistics warehouse"
+    },
+    {
+      "id": "page-header-industries",
+      "description": "Abstract image for industries page header",
+      "imageUrl": "https://images.unsplash.com/photo-1536604673810-81370412626d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaXZlcnNlJTIwaW5kdXN0cmllcyUyMGNvbGxhZ2V8ZW58MHx8fHwxNzYwOTQ0OTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "diverse industries collage"
     },
     {
       "id": "page-header-performance",
       "description": "Abstract image for past performance page header",
-      "imageUrl": "https://picsum.photos/seed/performance-header/1200/300",
+      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwY2hhcnR8ZW58MHx8fHwxNzYwODY1MTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data chart"
     },
     {
       "id": "page-header-certifications",
       "description": "Abstract image for certifications page header",
-      "imageUrl": "https://picsum.photos/seed/certs-header/1200/300",
+      "imageUrl": "https://images.unsplash.com/photo-1644329771977-0a8c6e3928ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MDg3NDE1NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official document"
     },
     {
       "id": "page-header-resources",
       "description": "Abstract image for resources page header",
-      "imageUrl": "https://picsum.photos/seed/resources-header/1200/300",
+      "imageUrl": "https://images.unsplash.com/photo-1603162091169-3ab1dec841a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib29rc2hlbGYlMjBsaWJyYXJ5fGVufDB8fHx8MTc2MDg3MjE0MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bookshelf library"
     },
     {
       "id": "page-header-contact",
       "description": "Abstract image for contact page header",
-      "imageUrl": "https://picsum.photos/seed/contact-header/1200/300",
+      "imageUrl": "https://images.unsplash.com/photo-1695384539284-683ca3b2b602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21tdW5pY2F0aW9uJTIwbmV0d29ya3xlbnwwfHx8fDE3NjA5NDQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "communication network"
     },
     {
       "id": "leader-1",
       "description": "Portrait of a company leader",
-      "imageUrl": "https://picsum.photos/seed/leader1/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjA4NTQ0NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
       "id": "leader-2",
       "description": "Portrait of a company leader",
-      "imageUrl": "https://picsum.photos/seed/leader2/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjA4NTQ0NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
       "id": "leader-3",
       "description": "Portrait of a company leader",
-      "imageUrl": "https://picsum.photos/seed/leader3/400/400",
+      "imageUrl": "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwaGVhZHNob3R8ZW58MHx8fHwxNzYwODU0NDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional headshot"
     },
     {
       "id": "case-study-1",
       "description": "Image for a logistics case study",
-      "imageUrl": "https://picsum.photos/seed/cs1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FyZ28lMjBzaGlwfGVufDB8fHx8MTc2MDg3Mjk0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cargo ship"
     },
     {
       "id": "case-study-2",
       "description": "Image for a facilities support case study",
-      "imageUrl": "https://picsum.photos/seed/cs2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBidWlsZGluZ3xlbnwwfHx8fDE3NjA4NDE0NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern building"
     },
     {
       "id": "case-study-3",
       "description": "Image for a laundry services case study",
-      "imageUrl": "https://picsum.photos/seed/cs3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxpbmR1c3RyaWFsJTIwbGF1bmRyeXxlbnwwfHx8fDE3NjA5NDQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "industrial laundry"
     },
     {
       "id": "case-study-4",
       "description": "Image for a transportation case study",
-      "imageUrl": "https://picsum.photos/seed/cs4/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1591768793355-74d04bb6608f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmFuc3BvcnQlMjB0cnVja3xlbnwwfHx8fDE3NjA5NDQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "transport truck"
     },
     {
       "id": "blog-post-1",
       "description": "Image for a blog post on logistics",
-      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXBwbHklMjBjaGFpbnxlbnwwfHx8fDE3NjA5NDQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "supply chain"
     },
     {
       "id": "blog-post-2",
       "description": "Image for a blog post on compliance",
-      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1645994432686-f061051fd5b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb3Zlcm5tZW50JTIwcmVndWxhdGlvbnxlbnwwfHx8fDE3NjA5NDQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "government regulation"
     },
     {
       "id": "blog-post-3",
       "description": "Image for a blog post on IT modernization",
-      "imageUrl": "https://picsum.photos/seed/blog3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2VydmVyJTIwcm9vbXxlbnwwfHx8fDE3NjA4NDYzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "server room"
     }
   ]

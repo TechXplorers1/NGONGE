@@ -4,6 +4,7 @@ export const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/capabilities' },
+  { name: 'Industries', href: '/industries' },
   { name: 'Projects', href: '/past-performance' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -81,6 +82,29 @@ export const capabilities = [
         href: '/capabilities/equipment-leasing',
         description: 'Rental and leasing of other commercial and industrial machinery and equipment.',
         icon: 'HardHat' as const,
+    }
+];
+
+export const industries = [
+    {
+        title: 'Federal Government',
+        description: 'Providing mission-critical support services to a wide range of federal agencies and departments.',
+        icon: 'Building' as const,
+    },
+    {
+        title: 'Department of Defense',
+        description: 'Delivering logistics, facility management, and support services to military bases and defense installations.',
+        icon: 'ShieldCheck' as const,
+    },
+    {
+        title: 'Healthcare',
+        description: 'Offering specialized linen, laundry, and facility services for federal healthcare systems like the VHA.',
+        icon: 'Star' as const,
+    },
+    {
+        title: 'Commercial Sector',
+        description: 'Extending our industrial laundry, equipment leasing, and janitorial expertise to commercial clients.',
+        icon: 'Truck' as const,
     }
 ];
 
