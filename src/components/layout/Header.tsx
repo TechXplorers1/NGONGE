@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import Link from "next/link";
@@ -10,7 +11,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { navLinks, capabilities } from "@/lib/placeholder-data";
+import { navLinks, capabilities, industries } from "@/lib/placeholder-data";
 import { Logo } from "./Logo";
 import {
   NavigationMenu,
@@ -77,8 +78,28 @@ function NavMenu() {
                     </ul>
                   </NavigationMenuContent>
                 </>
+             ) : link.name === "Industries" ? (
+                <>
+                  <NavigationMenuTrigger className={cn(
+                      "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                      pathname.startsWith("/industries") ? "text-primary" : "text-muted-foreground"
+                    )}>Industries</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                      {industries.map((component) => (
+                        <ListItem
+                          key={component.title}
+                          title={component.title}
+                          href={'/industries'}
+                        >
+                          {component.description}
+                        </ListItem>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </>
               ) : (
-                <Link href={link.href} legacyBehavior={false} passHref>
+                <Link href={link.href} passHref legacyBehavior>
                   <NavigationMenuLink
                     active={pathname === link.href}
                     className={cn(
@@ -131,11 +152,11 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="pr-0 w-[300px]">
                 <SheetHeader>
-                   <SheetTitle className="sr-only">Main Menu</SheetTitle>
                    <Link href="/" className="flex items-center space-x-2 p-4">
                     <Logo />
                     <span className="font-bold">NGONGE</span>
                   </Link>
+                  <SheetTitle className="sr-only">Main Menu</SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col space-y-2 mt-4">
                   {navLinks.map((link) => (
