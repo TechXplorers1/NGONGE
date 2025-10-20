@@ -77,13 +77,12 @@ function NavMenu() {
                 </>
               ) : (
                 <Link href={link.href} passHref>
-                  <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(),
-                    "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent",
-                    pathname === link.href ? "text-primary" : "text-muted-foreground"
-                  )} active={pathname === link.href}>
-                    <a>
+                  <NavigationMenuLink active={pathname === link.href} className={cn(
+                      navigationMenuTriggerStyle(),
+                      "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent",
+                      pathname === link.href ? "text-primary" : "text-muted-foreground"
+                    )}>
                       {link.name}
-                    </a>
                   </NavigationMenuLink>
                 </Link>
               )
