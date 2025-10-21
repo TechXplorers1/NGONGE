@@ -80,11 +80,9 @@ export function Header() {
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.name}>
-                    <Link href={link.href} legacyBehavior={false} passHref>
-                        <NavigationMenuLink asChild active={pathname === link.href} className={navigationMenuTriggerStyle()}>
-                            <Link href={link.href}>{link.name}</Link>
-                        </NavigationMenuLink>
-                    </Link>
+                    <NavigationMenuLink asChild active={pathname === link.href} className={navigationMenuTriggerStyle()}>
+                        <Link href={link.href}>{link.name}</Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 )
               )}
@@ -102,7 +100,7 @@ export function Header() {
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
+            <SheetContent side="left" className="p-0">
               <div className="flex justify-between items-center p-4 border-b">
                   <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
                     <Logo />
@@ -113,18 +111,18 @@ export function Header() {
                     <span className="sr-only">Close menu</span>
                   </Button>
                 </div>
-              <div className="mt-6 flex flex-col space-y-2">
+              <div className="mt-6 flex flex-col space-y-1 p-2">
                 {navLinks.map((link) => {
                   if (link.children) {
                     return (
-                      <div key={link.name} className="px-2">
-                        <p className="text-lg font-medium">{link.name}</p>
-                        <div className="flex flex-col space-y-1 pl-2 mt-1">
+                      <div key={link.name} className="px-2 py-1">
+                        <p className="font-semibold text-muted-foreground">{link.name}</p>
+                        <div className="flex flex-col space-y-1 pl-2 mt-2">
                           {link.children.map(child => (
                             <Link
                               key={child.title}
                               href={child.href}
-                              className={cn("text-muted-foreground hover:text-foreground", pathname === child.href && "text-accent")}
+                              className={cn("text-muted-foreground hover:text-foreground p-1 rounded-md", pathname === child.href && "text-accent font-semibold")}
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               {child.title}
@@ -138,7 +136,7 @@ export function Header() {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className={cn("text-lg font-medium p-2 rounded-md", pathname === link.href ? "bg-accent" : "hover:bg-muted" )}
+                      className={cn("text-lg font-medium p-2 rounded-md", pathname === link.href ? "bg-accent text-accent-foreground" : "hover:bg-muted" )}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.name}
