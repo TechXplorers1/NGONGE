@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import React from "react";
 
@@ -47,6 +47,7 @@ const ListItem = React.forwardRef<
   );
 });
 ListItem.displayName = "ListItem"
+
 
 function NavigationMenuItems() {
   const pathname = usePathname();
@@ -95,20 +96,20 @@ function NavigationMenuItems() {
                 </NavigationMenuContent>
             </>
             ) : (
-                <NavigationMenuLink asChild>
-                    <Link
-                    href={link.href}
-                    className={cn(
-                        navigationMenuTriggerStyle(),
-                        "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                        pathname === link.href
-                        ? "text-primary"
-                        : "text-muted-foreground"
-                    )}
-                    >
-                    {link.name}
-                    </Link>
-                </NavigationMenuLink>
+              <NavigationMenuLink asChild>
+                <Link
+                  href={link.href}
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                    pathname === link.href
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  )}
+                >
+                  {link.name}
+                </Link>
+              </NavigationMenuLink>
             )}
         </NavigationMenuItem>
       ))}
@@ -131,9 +132,29 @@ function NavMenu() {
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+
+  if (!isMounted) {
+    return (
+        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
+             <div className="container flex h-20 items-center">
+                <Link href="/" className="flex items-center space-x-2 mr-6 transition-transform hover:scale-105">
+                <Logo />
+                <span className="font-bold text-lg sm:inline-block">NGONGE</span>
+                </Link>
+             </div>
+        </header>
+    )
+  }
+
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm transition-shadow duration-300 hover:shadow-md">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm transition-shadow duration-300">
       <div className="container flex h-20 items-center">
         <Link href="/" className="flex items-center space-x-2 mr-6 transition-transform hover:scale-105">
           <Logo />
