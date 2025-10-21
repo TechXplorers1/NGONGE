@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -26,7 +27,7 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <Link
+        <a
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group",
@@ -38,7 +39,7 @@ const ListItem = React.forwardRef<
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground group-hover:text-accent-foreground">
             {children}
           </p>
-        </Link>
+        </a>
       </NavigationMenuLink>
     </li>
   );
@@ -67,22 +68,24 @@ export function Header() {
                     <NavigationMenuContent>
                       <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                         {link.children.map((component) => (
-                          <ListItem
-                            key={component.title}
-                            title={component.title}
-                            href={component.href}
-                          >
-                            {component.description}
-                          </ListItem>
+                           <Link key={component.title} href={component.href} legacyBehavior passHref>
+                            <ListItem
+                              title={component.title}
+                            >
+                              {component.description}
+                            </ListItem>
+                          </Link>
                         ))}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.name}>
-                    <NavigationMenuLink asChild active={pathname === link.href} className={navigationMenuTriggerStyle()}>
-                        <Link href={link.href}>{link.name}</Link>
-                    </NavigationMenuLink>
+                    <Link href={link.href} legacyBehavior passHref>
+                        <NavigationMenuLink active={pathname === link.href} className={navigationMenuTriggerStyle()}>
+                            {link.name}
+                        </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuItem>
                 )
               )}
