@@ -19,6 +19,27 @@ export const capabilities = [
         description: 'Specialized laundry services that meet the high standards of federal facilities.',
         icon: 'Shirt' as const,
     },
+];
+
+export const allCapabilities = [
+    { 
+        title: 'Transportation & Logistics', 
+        href: '/capabilities/transportation-logistics',
+        description: 'Secure and efficient management of freight, supply chain, and fleet operations.',
+        icon: 'Truck' as const,
+    },
+    { 
+        title: 'Facilities Support', 
+        href: '/capabilities/facilities-support',
+        description: 'Comprehensive maintenance for operational readiness and safety of government installations.',
+        icon: 'Building' as const,
+    },
+    { 
+        title: 'Laundry & Linen Services', 
+        href: '/capabilities/laundry-linen-services',
+        description: 'Specialized laundry services that meet the high standards of federal facilities.',
+        icon: 'Shirt' as const,
+    },
     { 
         title: 'Janitorial Services', 
         href: '/capabilities/janitorial-services',

@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { capabilities } from "@/lib/placeholder-data";
+import { allCapabilities } from "@/lib/placeholder-data";
 import { ArrowRight, Building, HardHat, Shirt, Truck } from "lucide-react";
 import Link from "next/link";
 import {
@@ -33,7 +33,7 @@ export default function CapabilitiesPage() {
               className="w-full"
             >
               <CarouselContent>
-                {capabilities.map((cap) => {
+                {allCapabilities.map((cap) => {
                   const Icon = iconMap[cap.icon as keyof typeof iconMap] || Truck;
                   return (
                     <CarouselItem key={cap.title} className="basis-full md:basis-1/2 lg:basis-1/3">
