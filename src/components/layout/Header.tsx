@@ -36,11 +36,14 @@ export function Header() {
             <NavigationMenuList>
               {navLinks.map((link) => (
                 <NavigationMenuItem key={link.name}>
-                  <Link href={link.href} legacyBehavior passHref>
-                    <NavigationMenuLink active={pathname === link.href} className={navigationMenuTriggerStyle()}>
-                      {link.name}
+                    <NavigationMenuLink asChild active={pathname === link.href}>
+                      <Link
+                        href={link.href}
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        {link.name}
+                      </Link>
                     </NavigationMenuLink>
-                  </Link>
                 </NavigationMenuItem>
               ))}
             </NavigationMenuList>
@@ -61,7 +64,7 @@ export function Header() {
                             <span className="sr-only">Open menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full max-w-sm">
+                    <SheetContent side="right" className="w-full max-w-sm p-0">
                         <div className="flex justify-between items-center p-4 border-b">
                              <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
                                 <Logo />
