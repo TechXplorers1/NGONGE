@@ -17,8 +17,7 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { navLinks } from "@/lib/placeholder-data";
 import { cn } from "@/lib/utils";
-import React,
-{ useState } from "react";
+import React, { useState } from "react";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -27,10 +26,10 @@ const ListItem = React.forwardRef<
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group",
             className
           )}
           {...props}
@@ -39,7 +38,7 @@ const ListItem = React.forwardRef<
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground group-hover:text-accent-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );
@@ -81,9 +80,9 @@ export function Header() {
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.name}>
-                    <Link href={link.href} passHref>
-                        <NavigationMenuLink active={pathname === link.href} className={navigationMenuTriggerStyle()}>
-                            {link.name}
+                    <Link href={link.href} legacyBehavior={false} passHref>
+                        <NavigationMenuLink asChild active={pathname === link.href} className={navigationMenuTriggerStyle()}>
+                            <Link href={link.href}>{link.name}</Link>
                         </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
@@ -115,16 +114,37 @@ export function Header() {
                   </Button>
                 </div>
               <div className="mt-6 flex flex-col space-y-2">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    href={link.href}
-                    className={cn("text-lg font-medium p-2 rounded-md", pathname === link.href ? "bg-accent" : "hover:bg-muted" )}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
+                {navLinks.map((link) => {
+                  if (link.children) {
+                    return (
+                      <div key={link.name} className="px-2">
+                        <p className="text-lg font-medium">{link.name}</p>
+                        <div className="flex flex-col space-y-1 pl-2 mt-1">
+                          {link.children.map(child => (
+                            <Link
+                              key={child.title}
+                              href={child.href}
+                              className={cn("text-muted-foreground hover:text-foreground", pathname === child.href && "text-accent")}
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              {child.title}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  }
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      className={cn("text-lg font-medium p-2 rounded-md", pathname === link.href ? "bg-accent" : "hover:bg-muted" )}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  )
+                })}
               </div>
             </SheetContent>
           </Sheet>
