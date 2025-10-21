@@ -97,7 +97,7 @@ function NavMenu() {
                   </NavigationMenuContent>
                 </>
               ) : (
-                <NavigationMenuLink asChild active={pathname === link.href}>
+                <NavigationMenuLink asChild>
                   <Link
                     href={link.href}
                     className={cn(
@@ -137,7 +137,7 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button asChild className="hidden md:inline-flex transition-transform hover:scale-105">
+          <Button asChild className="hidden md:inline-flex transition-transform hover:scale-105 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact">Request a Proposal</Link>
           </Button>
 
