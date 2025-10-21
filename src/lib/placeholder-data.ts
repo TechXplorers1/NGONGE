@@ -1,3 +1,4 @@
+
 import { Building, FileText, HardHat, LucideIcon, Mail, Phone, ShieldCheck, Shirt, Star, Truck, Smartphone, Code, BrainCircuit } from "lucide-react"
 
 export const capabilities = [
@@ -202,17 +203,17 @@ export const trustIndicators = [
     },
     {
         name: 'SAM.gov Registered',
-        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=SAM.gov',
+        imageUrl: '/sam-gov-logo.png',
         alt: 'SAM.gov Registered Logo'
     },
     {
         name: 'ISO 9001 Certified',
-        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=ISO+9001',
+        imageUrl: '/iso-9001-logo.png',
         alt: 'ISO 9001 Certified Logo'
     },
     {
         name: 'CAGE/DUNS Verified',
-        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=CAGE/DUNS',
+        imageUrl: '/cage-duns-logo.png',
         alt: 'CAGE/DUNS Verified Logo'
     },
 ];
@@ -250,6 +251,72 @@ export const caseStudies = [
     result: 'Enabled critical aid to reach affected populations 24 hours faster than anticipated, supporting life-saving operations.',
     imageId: 'case-study-4',
   },
+];
+
+export const ngonjeCaseStudies = [
+  {
+    client: "U.S. Department of the Air Force",
+    contractNumber: "FA822725P0018",
+    projectTitle: "FE Warren Protective Clothing",
+    duration: "June 2025 – June 2030",
+    contractValue: "$50,000",
+    description: "Provided laundry and maintenance services for protective clothing and shop garments used by missile maintenance teams. Ensured strict compliance with Air Force hygiene and quality control standards.",
+    poc: "Rachel Wright, Contracting Officer",
+    imageId: "project-air-force",
+  },
+  {
+    client: "Department of the Army",
+    contractNumber: "SP4703-25-P-0034",
+    projectTitle: "Protective Uniform Rental for Electrical Personnel and Shop Towel Rental",
+    duration: "October 2025 – October 2030",
+    contractValue: "$96,000",
+    description: "Provided rental, cleaning, and replacement services for protective uniforms and industrial shop towels for Army electrical maintenance units. Managed logistics, pickup, and delivery on a scheduled basis.",
+    poc: "Benjamin Maxwell, Contracting Officer",
+    imageId: "project-army",
+  },
+  {
+    client: "U.S. Department of the Interior",
+    contractNumber: "140R3025P0070",
+    projectTitle: "Rental and Laundry Services for Yuma Area Office",
+    duration: "October 2025 – September 2030",
+    contractValue: "$78,000",
+    description: "Delivered professional laundering services for maintenance and field staff garments at the Bureau’s Yuma facility, ensuring cleanliness, safety, and timely delivery under federal performance standards.",
+    poc: "Jenna Hall, Contracting Officer",
+    imageId: "project-interior",
+  }
+];
+
+export const vestisCaseStudies = [
+    {
+        client: "U.S. Department of Defense",
+        contractNumber: "W912LA-19-P-0039",
+        projectTitle: "Coverall Laundry Services – Department of Defense",
+        duration: "September 2019 – September 2023",
+        contractValue: "$430,000",
+        description: "Provided industrial laundry services for coveralls and uniforms used by defense personnel across multiple bases, maintaining quality and safety standards throughout the contract term.",
+        poc: "Uriel Ramirez, Contracting Officer",
+        imageId: "project-dod-1",
+    },
+    {
+        client: "U.S. Department of Defense",
+        contractNumber: "W912LP20P0003",
+        projectTitle: "Industrial Coverall Rental & Laundry – Department of Defense",
+        duration: "April 2020 – March 2022",
+        contractValue: "$191,000",
+        description: "Managed the rental and cleaning of coveralls and safety garments for logistics and maintenance units. Ensured environmental compliance and consistent bi-weekly delivery schedules.",
+        poc: "Jennifer Burbage, Contracting Officer",
+        imageId: "project-dod-2",
+    },
+    {
+        client: "U.S. Department of Agriculture (FSIS)",
+        contractNumber: "F6Z1LMV9DZY3",
+        projectTitle: "Lab Coat Rental & Servicing – Food Safety and Inspection Service",
+        duration: "December 2024 – March 2029",
+        contractValue: "$12,000",
+        description: "Provided lab coat rental, cleaning, and replacement services to FSIS laboratories. Maintained sterilization and contamination-free standards essential for food safety operations.",
+        poc: "K. Petty, Contracting Officer",
+        imageId: "project-usda",
+    }
 ];
 
 

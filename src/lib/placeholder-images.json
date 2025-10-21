@@ -15,7 +15,7 @@
     {
       "id": "page-header-capabilities",
       "description": "Abstract image for capabilities page header",
-      "imageUrl": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dpc3RpY3MlMjB3YXJlaG91c2V8ZW58MHx8fHwxNzYwODQ1MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dpc3RpY3MlMjB3YXJlaG91c2V8ZW58MHx8fHwxNzYwODQxMjEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "logistics warehouse"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "blog-post-2",
       "description": "Image for a blog post on compliance",
-      "imageUrl": "https://images.unsplash.com/photo-1645994432686-f061051fd5b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb3Zlcm5tZW50JTIwcmVndWxhdGlvbnxlbnwwfHx8fDE3NjA5NDQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1645994432686-f061051fd5b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxn'b3Zlcm5tZW50JTIwcmVndWxhdGlvbnxlbnwwfHx8fDE3NjA5NDQ5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "government regulation"
     },
     {
@@ -107,6 +107,42 @@
       "description": "Image for a blog post on IT modernization",
       "imageUrl": "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2VydmVyJTIwcm9vbXxlbnwwfHx8fDE3NjA4NDYzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "server room"
+    },
+    {
+      "id": "project-air-force",
+      "description": "Protective clothing for the Air Force",
+      "imageUrl": "https://images.unsplash.com/photo-1616654226105-4c552083a152?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "air force"
+    },
+    {
+      "id": "project-army",
+      "description": "Protective uniforms for the Army",
+      "imageUrl": "https://images.unsplash.com/photo-1581092580423-9c4c7c88a387?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "electrical maintenance"
+    },
+    {
+      "id": "project-interior",
+      "description": "Bureau of Reclamation project image",
+      "imageUrl": "https://images.unsplash.com/photo-1599187573977-cb743780493a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "dam water"
+    },
+    {
+      "id": "project-dod-1",
+      "description": "Coveralls for the Department of Defense",
+      "imageUrl": "https://images.unsplash.com/photo-1599056030999-52d3a339796e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "military uniforms"
+    },
+    {
+      "id": "project-dod-2",
+      "description": "Industrial coveralls for the Department of Defense",
+      "imageUrl": "https://images.unsplash.com/photo-1628243649429-f23d780a5626?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "industrial work"
+    },
+    {
+      "id": "project-usda",
+      "description": "Lab coats for the Food Safety and Inspection Service",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "science lab"
     }
   ]
 }
