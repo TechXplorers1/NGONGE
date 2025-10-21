@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import Link from "next/link";
@@ -48,72 +49,80 @@ const ListItem = React.forwardRef<
 });
 ListItem.displayName = "ListItem"
 
-
-function NavMenu() {
+function NavigationMenuItems() {
   const pathname = usePathname();
   return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        {navLinks.map((link) => (
-          <NavigationMenuItem key={link.name}>
-             {link.name === "Services" ? (
-                <>
-                  <NavigationMenuTrigger className={cn(
-                      "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                      pathname.startsWith("/capabilities") ? "text-primary" : "text-muted-foreground"
-                    )}>Services</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                      {capabilities.map((component) => (
-                        <ListItem
-                          key={component.title}
-                          title={component.title}
-                          href={component.href}
-                        >
-                          {component.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </>
-             ) : link.name === "Industries" ? (
-                <>
-                  <NavigationMenuTrigger className={cn(
-                      "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                      pathname.startsWith("/industries") ? "text-primary" : "text-muted-foreground"
-                    )}>Industries</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                      {industries.map((component) => (
-                        <ListItem
-                          key={component.title}
-                          title={component.title}
-                          href={'/industries'}
-                        >
-                          {component.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </>
-              ) : (
+    <>
+      {navLinks.map((link) => (
+        <NavigationMenuItem key={link.name}>
+            {link.name === "Services" ? (
+            <>
+                <NavigationMenuTrigger className={cn(
+                    "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                    pathname.startsWith("/capabilities") ? "text-primary" : "text-muted-foreground"
+                )}>Services</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    {capabilities.map((component) => (
+                    <ListItem
+                        key={component.title}
+                        title={component.title}
+                        href={component.href}
+                    >
+                        {component.description}
+                    </ListItem>
+                    ))}
+                </ul>
+                </NavigationMenuContent>
+            </>
+            ) : link.name === "Industries" ? (
+            <>
+                <NavigationMenuTrigger className={cn(
+                    "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                    pathname.startsWith("/industries") ? "text-primary" : "text-muted-foreground"
+                )}>Industries</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    {industries.map((component) => (
+                    <ListItem
+                        key={component.title}
+                        title={component.title}
+                        href={'/industries'}
+                    >
+                        {component.description}
+                    </ListItem>
+                    ))}
+                </ul>
+                </NavigationMenuContent>
+            </>
+            ) : (
                 <NavigationMenuLink asChild>
-                  <Link
+                    <Link
                     href={link.href}
                     className={cn(
-                      navigationMenuTriggerStyle(),
-                      "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                      pathname === link.href
+                        navigationMenuTriggerStyle(),
+                        "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                        pathname === link.href
                         ? "text-primary"
                         : "text-muted-foreground"
                     )}
-                  >
+                    >
                     {link.name}
-                  </Link>
+                    </Link>
                 </NavigationMenuLink>
-              )}
-          </NavigationMenuItem>
-        ))}
+            )}
+        </NavigationMenuItem>
+      ))}
+    </>
+  );
+}
+
+
+function NavMenu() {
+  return (
+    <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItems />
       </NavigationMenuList>
     </NavigationMenu>
   );
