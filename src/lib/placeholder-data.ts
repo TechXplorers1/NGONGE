@@ -1,4 +1,4 @@
-import { Building, FileText, HardHat, LucideIcon, Mail, Phone, ShieldCheck, Shirt, Star, Truck } from "lucide-react"
+import { Building, FileText, HardHat, LucideIcon, Mail, Phone, ShieldCheck, Shirt, Star, Truck, Smartphone, Code, BrainCircuit } from "lucide-react"
 
 export const capabilities = [
     { 
@@ -19,6 +19,24 @@ export const capabilities = [
         description: 'Specialized laundry services that meet the high standards of federal facilities.',
         icon: 'Shirt' as const,
     },
+    {
+        title: 'Mobile Application Development',
+        href: '/capabilities/mobile-app-development',
+        description: 'Custom mobile apps for Android & iOS to support federal agency missions.',
+        icon: 'Smartphone' as const,
+    },
+    {
+        title: 'Web Application Development',
+        href: '/capabilities/web-app-development',
+        description: 'Developing secure and scalable web applications and software.',
+        icon: 'Code' as const,
+    },
+    {
+        title: 'Digital Marketing & Gen AI',
+        href: '/capabilities/digital-marketing-gen-ai',
+        description: 'Leveraging Generative AI for advanced digital marketing solutions.',
+        icon: 'BrainCircuit' as const,
+    }
 ];
 
 export const allCapabilities = [
@@ -87,6 +105,24 @@ export const allCapabilities = [
         href: '/capabilities/equipment-leasing',
         description: 'Rental and leasing of other commercial and industrial machinery and equipment.',
         icon: 'HardHat' as const,
+    },
+    {
+        title: 'Mobile Application Development',
+        href: '/capabilities/mobile-app-development',
+        description: 'Custom mobile apps for Android & iOS to support federal agency missions.',
+        icon: 'Smartphone' as const,
+    },
+    {
+        title: 'Web Application Development',
+        href: '/capabilities/web-app-development',
+        description: 'Developing secure and scalable web applications and software.',
+        icon: 'Code' as const,
+    },
+    {
+        title: 'Digital Marketing & Gen AI',
+        href: '/capabilities/digital-marketing-gen-ai',
+        description: 'Leveraging Generative AI for advanced digital marketing solutions.',
+        icon: 'BrainCircuit' as const,
     }
 ];
 
@@ -159,22 +195,22 @@ export const navLinks = [
 ];
 
 export const trustIndicators = [
-    { 
+    {
         name: 'GSA Advantage',
-        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=GSA+Advantage',
+        imageUrl: 'https://www.gsaadvantage.gov/images/adv19/adv19-nav-logo.png',
         alt: 'GSA Advantage Logo'
     },
-    { 
+    {
         name: 'SAM.gov Registered',
         imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=SAM.gov',
         alt: 'SAM.gov Registered Logo'
     },
-    { 
+    {
         name: 'ISO 9001 Certified',
         imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=ISO+9001',
         alt: 'ISO 9001 Certified Logo'
     },
-    { 
+    {
         name: 'CAGE/DUNS Verified',
         imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=CAGE/DUNS',
         alt: 'CAGE/DUNS Verified Logo'
