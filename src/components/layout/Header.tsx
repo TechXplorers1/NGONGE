@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -80,11 +81,9 @@ export function Header() {
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.name}>
-                    <Link href={link.href} passHref>
-                        <NavigationMenuLink asChild active={pathname === link.href} className={navigationMenuTriggerStyle()}>
-                            <Link href={link.href}>{link.name}</Link>
-                        </NavigationMenuLink>
-                    </Link>
+                    <NavigationMenuLink asChild active={pathname === link.href} className={navigationMenuTriggerStyle()}>
+                        <Link href={link.href}>{link.name}</Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
                 )
               )}
