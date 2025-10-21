@@ -46,10 +46,17 @@ export default function Home() {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Trusted by Federal Agencies
           </h3>
-          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             {trustIndicators.map((indicator, i) => (
               <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
-                <span className="font-bold text-base md:text-lg text-primary/80">{indicator.name}</span>
+                <div className="relative h-12 w-36">
+                    <Image 
+                        src={indicator.imageUrl}
+                        alt={indicator.alt}
+                        fill
+                        className="object-contain filter grayscale transition-all duration-300 hover:grayscale-0 opacity-60 hover:opacity-100"
+                    />
+                </div>
               </div>
             ))}
           </div>

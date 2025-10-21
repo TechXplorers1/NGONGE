@@ -138,10 +138,26 @@ export const navLinks = [
 ];
 
 export const trustIndicators = [
-    { name: 'GSA Advantage' },
-    { name: 'SAM.gov Registered' },
-    { name: 'ISO 9001 Certified' },
-    { name: 'CAGE/DUNS Verified' },
+    { 
+        name: 'GSA Advantage',
+        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=GSA+Advantage',
+        alt: 'GSA Advantage Logo'
+    },
+    { 
+        name: 'SAM.gov Registered',
+        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=SAM.gov',
+        alt: 'SAM.gov Registered Logo'
+    },
+    { 
+        name: 'ISO 9001 Certified',
+        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=ISO+9001',
+        alt: 'ISO 9001 Certified Logo'
+    },
+    { 
+        name: 'CAGE/DUNS Verified',
+        imageUrl: 'https://placehold.co/150x60/f0f0f0/a0a0a0?text=CAGE/DUNS',
+        alt: 'CAGE/DUNS Verified Logo'
+    },
 ];
 
 export const caseStudies = [
