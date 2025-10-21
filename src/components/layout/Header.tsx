@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import Link from "next/link";
@@ -134,7 +133,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm transition-shadow duration-300 hover:shadow-md">
       <div className="container flex h-20 items-center">
         <Link href="/" className="flex items-center space-x-2 mr-6 transition-transform hover:scale-105">
           <Logo />
@@ -173,8 +172,8 @@ export function Header() {
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className={cn(
-                          "p-3 rounded-l-md text-base font-medium uppercase tracking-wider",
-                          pathname === link.href ? "bg-accent text-accent-foreground" : "text-foreground hover:bg-muted"
+                          "p-3 rounded-l-md text-base font-medium uppercase tracking-wider transition-all duration-300 ease-in-out",
+                          pathname === link.href ? "bg-accent text-accent-foreground shadow-inner" : "text-foreground hover:bg-muted hover:pl-4"
                       )}
                     >
                       {link.name}
