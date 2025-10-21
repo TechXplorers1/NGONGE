@@ -68,22 +68,24 @@ export function Header() {
                     <NavigationMenuContent>
                       <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                         {link.children.map((component) => (
-                           <Link key={component.title} href={component.href} passHref legacyBehavior>
-                            <ListItem
+                           <ListItem
+                              key={component.title}
                               title={component.title}
+                              href={component.href}
                             >
                               {component.description}
                             </ListItem>
-                          </Link>
                         ))}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.name}>
-                    <NavigationMenuLink asChild active={pathname === link.href} className={navigationMenuTriggerStyle()}>
-                        <Link href={link.href}>{link.name}</Link>
-                    </NavigationMenuLink>
+                    <Link href={link.href} legacyBehavior passHref>
+                        <NavigationMenuLink active={pathname === link.href} className={navigationMenuTriggerStyle()}>
+                            {link.name}
+                        </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuItem>
                 )
               )}
