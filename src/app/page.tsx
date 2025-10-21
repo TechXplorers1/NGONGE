@@ -34,7 +34,7 @@ export default function Home() {
             <Button asChild size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform hover:scale-105">
               <Link href="/resources">Download Capability Statement</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent/10 transition-transform hover:scale-105">
+            <Button asChild size="lg" variant="outline" className="border-foreground/80 text-foreground hover:bg-foreground/5 hover:text-foreground transition-transform hover:scale-105">
               <Link href="/contact">Request a Proposal</Link>
             </Button>
           </div>
