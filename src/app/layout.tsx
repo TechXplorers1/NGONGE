@@ -1,7 +1,9 @@
+
 import type { Metadata } from 'next';
 import { Inter, Montserrat, Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
+import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
@@ -27,6 +29,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={cn('min-h-screen font-body antialiased', inter.variable, sourceCodePro.variable, montserrat.variable)}>
         <div className="relative flex min-h-dvh flex-col bg-background">
+          <Header />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
