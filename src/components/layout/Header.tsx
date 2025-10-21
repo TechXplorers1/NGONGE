@@ -2,12 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu } from "lucide-react";
 import React from "react";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { navLinks, capabilities, industries } from "@/lib/placeholder-data";
 import { Logo } from "./Logo";
@@ -45,8 +51,7 @@ const ListItem = React.forwardRef<
     </li>
   );
 });
-ListItem.displayName = "ListItem"
-
+ListItem.displayName = "ListItem";
 
 function NavigationMenuItems() {
   const pathname = usePathname();
@@ -54,68 +59,79 @@ function NavigationMenuItems() {
     <>
       {navLinks.map((link) => (
         <NavigationMenuItem key={link.name}>
-            {link.name === "Services" ? (
+          {link.name === "Services" ? (
             <>
-                <NavigationMenuTrigger className={cn(
-                    "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                    pathname.startsWith("/capabilities") ? "text-primary" : "text-muted-foreground"
-                )}>Services</NavigationMenuTrigger>
-                <NavigationMenuContent>
+              <NavigationMenuTrigger
+                className={cn(
+                  "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                  pathname.startsWith("/capabilities")
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                )}
+              >
+                Services
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                    {capabilities.map((component) => (
+                  {capabilities.map((component) => (
                     <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.href}
+                      key={component.title}
+                      title={component.title}
+                      href={component.href}
                     >
-                        {component.description}
+                      {component.description}
                     </ListItem>
-                    ))}
+                  ))}
                 </ul>
-                </NavigationMenuContent>
+              </NavigationMenuContent>
             </>
-            ) : link.name === "Industries" ? (
+          ) : link.name === "Industries" ? (
             <>
-                <NavigationMenuTrigger className={cn(
-                    "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                    pathname.startsWith("/industries") ? "text-primary" : "text-muted-foreground"
-                )}>Industries</NavigationMenuTrigger>
-                <NavigationMenuContent>
+              <NavigationMenuTrigger
+                className={cn(
+                  "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                  pathname.startsWith("/industries")
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                )}
+              >
+                Industries
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                    {industries.map((component) => (
+                  {industries.map((component) => (
                     <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={'/industries'}
+                      key={component.title}
+                      title={component.title}
+                      href={"/industries"}
                     >
-                        {component.description}
+                      {component.description}
                     </ListItem>
-                    ))}
+                  ))}
                 </ul>
-                </NavigationMenuContent>
+              </NavigationMenuContent>
             </>
-            ) : (
-                <NavigationMenuLink asChild>
-                    <Link
-                      href={link.href}
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
-                        pathname === link.href
-                          ? "text-primary"
-                          : "text-muted-foreground"
-                      )}
-                    >
-                      {link.name}
-                    </Link>
-                </NavigationMenuLink>
-            )}
+          ) : (
+            <NavigationMenuLink asChild>
+              <Link
+                href={link.href}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "transition-colors hover:text-accent font-medium tracking-widest uppercase bg-transparent text-sm",
+                  pathname === link.href
+                    ? "text-primary"
+                    : "text-muted-foreground"
+                )}
+              >
+                {link.name}
+              </Link>
+            </NavigationMenuLink>
+          )}
         </NavigationMenuItem>
       ))}
     </>
   );
 }
-
 
 function NavMenu() {
   return (
@@ -127,7 +143,6 @@ function NavMenu() {
   );
 }
 
-
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -135,17 +150,23 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm transition-shadow duration-300">
       <div className="container flex h-20 items-center">
-        <Link href="/" className="flex items-center space-x-2 mr-6 transition-transform hover:scale-105">
+        <Link
+          href="/"
+          className="flex items-center space-x-2 mr-6 transition-transform hover:scale-105"
+        >
           <Logo />
           <span className="font-bold text-lg sm:inline-block">NGONGE</span>
         </Link>
-        
+
         <div className="hidden lg:flex flex-1 items-center justify-center">
           <NavMenu />
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button asChild className="hidden md:inline-flex transition-transform hover:scale-105 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button
+            asChild
+            className="hidden md:inline-flex transition-transform hover:scale-105 bg-accent text-accent-foreground hover:bg-accent/90"
+          >
             <Link href="/contact">Request a Proposal</Link>
           </Button>
 
@@ -159,7 +180,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="pr-0 w-[300px]">
                 <SheetHeader>
-                   <Link href="/" className="flex items-center space-x-2 p-4">
+                  <Link href="/" className="flex items-center space-x-2 p-4">
                     <Logo />
                     <span className="font-bold">NGONGE</span>
                   </Link>
@@ -172,8 +193,10 @@ export function Header() {
                       href={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className={cn(
-                          "p-3 rounded-l-md text-base font-medium uppercase tracking-wider transition-all duration-300 ease-in-out",
-                          pathname === link.href ? "bg-accent text-accent-foreground shadow-inner" : "text-foreground hover:bg-muted hover:pl-4"
+                        "p-3 rounded-l-md text-base font-medium uppercase tracking-wider transition-all duration-300 ease-in-out",
+                        pathname === link.href
+                          ? "bg-accent text-accent-foreground shadow-inner"
+                          : "text-foreground hover:bg-muted hover:pl-4"
                       )}
                     >
                       {link.name}
