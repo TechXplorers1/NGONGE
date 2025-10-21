@@ -414,8 +414,8 @@ export const contactInfo = [
     {
         icon: Phone,
         title: "Phone",
-        value: "+1 (555) 123-4567",
-        href: "tel:+15551234567"
+        value: "+1 (336) 209-1982",
+        href: "tel:+13362091982"
     }
 ];
 
