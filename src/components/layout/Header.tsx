@@ -81,10 +81,10 @@ export function Header() {
                   </NavigationMenuItem>
                 ) : (
                   <NavigationMenuItem key={link.name}>
-                    <Link href={link.href} legacyBehavior passHref>
-                        <NavigationMenuLink active={pathname === link.href} className={navigationMenuTriggerStyle()}>
-                            {link.name}
-                        </NavigationMenuLink>
+                    <Link href={link.href} passHref legacyBehavior>
+                      <NavigationMenuLink active={pathname === link.href} className={navigationMenuTriggerStyle()}>
+                          {link.name}
+                      </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
                 )
