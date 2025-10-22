@@ -180,7 +180,7 @@ export const industries = [
         title: 'Media and Advertising',
         description: 'Equipment leasing and logistics for media production and advertising events.',
         icon: 'HardHat' as const,
-        href: '/industries/media-advertising'
+        href: '/industries/media-and-advertising'
     },
     {
         title: 'Commercial Sector',
@@ -196,7 +196,7 @@ export const navLinks = [
   { 
     name: 'Services', 
     href: '/capabilities',
-    children: capabilities
+    children: allCapabilities
   },
   { 
     name: 'Industries', 
