@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -94,21 +95,16 @@ export default function AboutPage() {
             </div>
             <div className="mt-12 max-w-3xl mx-auto">
                 <div className="relative">
-                    <div className="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-border" aria-hidden="true"></div>
+                    <div className="absolute left-0 h-full w-0.5 bg-border" aria-hidden="true"></div>
                     {companyTimeline.map((item, index) => (
-                        <div key={item.year} className="relative mb-8">
-                            <div className="flex items-center" style={{ flexDirection: index % 2 === 0 ? 'row' : 'row-reverse' }}>
-                                <div className="w-1/2 px-4">
-                                    <div className={`text-right ${index % 2 !== 0 ? 'md:text-left' : 'md:text-right'}`}>
-                                      <p className="font-bold text-accent text-lg">{item.year}</p>
-                                      <p className="text-muted-foreground">{item.event}</p>
-                                    </div>
-                                </div>
-                                <div className="absolute left-1/2 -translate-x-1/2 bg-background p-1">
-                                    <div className="h-4 w-4 rounded-full bg-primary ring-4 ring-background"></div>
-                                </div>
-                                <div className="w-1/2"></div>
-                            </div>
+                        <div key={item.year} className="relative pl-8 mb-8">
+                           <div className="absolute left-0 -translate-x-1/2 bg-background p-1">
+                               <div className="h-4 w-4 rounded-full bg-primary ring-4 ring-background"></div>
+                           </div>
+                           <div className="text-left">
+                               <p className="font-bold text-accent text-lg">{item.year}</p>
+                               <p className="text-muted-foreground">{item.event}</p>
+                           </div>
                         </div>
                     ))}
                 </div>
