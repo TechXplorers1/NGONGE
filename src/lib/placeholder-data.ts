@@ -1,5 +1,5 @@
 
-import { Building, FileText, HardHat, LucideIcon, Mail, Phone, ShieldCheck, Shirt, Star, Truck, Smartphone, Code, BrainCircuit } from "lucide-react"
+import { Building, FileText, HardHat, LucideIcon, Mail, Phone, ShieldCheck, Shirt, Star, Truck, Smartphone, Code, BrainCircuit, Cloud } from "lucide-react"
 
 export const capabilities = [
     { 
@@ -37,6 +37,12 @@ export const capabilities = [
         href: '/capabilities/digital-marketing-gen-ai',
         description: 'Leveraging Generative AI for advanced digital marketing solutions.',
         icon: 'BrainCircuit' as const,
+    },
+    {
+        title: 'Cloud Services',
+        href: '/capabilities/cloud-services',
+        description: 'Secure, scalable, and compliant cloud solutions for federal agencies.',
+        icon: 'Cloud' as const,
     }
 ];
 
@@ -124,6 +130,12 @@ export const allCapabilities = [
         href: '/capabilities/digital-marketing-gen-ai',
         description: 'Leveraging Generative AI for advanced digital marketing solutions.',
         icon: 'BrainCircuit' as const,
+    },
+    {
+        title: 'Cloud Services',
+        href: '/capabilities/cloud-services',
+        description: 'Secure, scalable, and compliant cloud solutions for federal agencies.',
+        icon: 'Cloud' as const,
     }
 ];
 

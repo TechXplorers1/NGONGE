@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { allCapabilities } from "@/lib/placeholder-data";
-import { ArrowRight, Building, HardHat, Shirt, Truck, Smartphone, Code, BrainCircuit } from "lucide-react";
+import { ArrowRight, Building, HardHat, Shirt, Truck, Smartphone, Code, BrainCircuit, Cloud } from "lucide-react";
 import Link from "next/link";
 import {
   Carousel,
@@ -18,6 +18,7 @@ const iconMap = {
     Smartphone: Smartphone,
     Code: Code,
     BrainCircuit: BrainCircuit,
+    Cloud: Cloud,
 }
 
 export default function CapabilitiesPage() {
