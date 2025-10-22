@@ -1,5 +1,4 @@
 
-import { PageHeader } from "@/components/shared/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { industries } from "@/lib/placeholder-data";
 import { Building, ShieldCheck, Star, Truck, HardHat } from "lucide-react";
@@ -17,11 +16,6 @@ const iconMap = {
 export default function IndustriesPage() {
   return (
     <>
-      <PageHeader
-        title="Industries We Serve"
-        subtitle="Delivering tailored solutions across government and commercial sectors."
-        imageId="page-header-industries"
-      />
       <div className="container mx-auto py-16 sm:py-24">
         <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Our Market Focus</h2>

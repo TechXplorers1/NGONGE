@@ -4,14 +4,14 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 type PageHeaderProps = {
   title: string;
   subtitle: string;
-  imageId: string;
+  imageId?: string;
 };
 
 export function PageHeader({ title, subtitle, imageId }: PageHeaderProps) {
-  const image = PlaceHolderImages.find((img) => img.id === imageId);
+  const image = imageId ? PlaceHolderImages.find((img) => img.id === imageId) : null;
 
   return (
-    <section className="relative h-64 w-full">
+    <section className="relative h-64 w-full bg-primary">
       {image && (
         <Image
           src={image.imageUrl}
@@ -21,7 +21,7 @@ export function PageHeader({ title, subtitle, imageId }: PageHeaderProps) {
           data-ai-hint={image.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-primary/80" />
+      {image && <div className="absolute inset-0 bg-primary/80" />}
       <div className="relative container mx-auto z-10 flex h-full flex-col items-start justify-center text-primary-foreground px-4">
         <h1 className="text-4xl md:text-5xl font-headline font-bold">
           {title}

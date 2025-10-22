@@ -13,7 +13,6 @@ export default function IndustriesLayout({
       <PageHeader
         title="Industries We Serve"
         subtitle="Delivering tailored solutions across government and commercial sectors."
-        imageId="page-header-industries"
       />
       <div className="container mx-auto py-16 sm:py-24">
         <div className="grid grid-cols-1">
