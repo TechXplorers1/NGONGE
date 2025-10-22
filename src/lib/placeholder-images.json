@@ -93,55 +93,55 @@
     {
       "id": "blog-post-1",
       "description": "An abstract visualization of global logistics with interconnected lines across a world map.",
-      "imageUrl": "https://images.unsplash.com/photo-1585713181935-d5f622cc261e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzIyNDUwMjA4fDA&ixlibrb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1585713181935-d5f622cc261e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzIyNDUwMjA4fDA&ixlib-rb-4.0.3&q=80&w=1080",
       "imageHint": "global logistics"
     },
     {
       "id": "blog-post-2",
-      "description": "A close-up of a signed contract, representing law and compliance.",
-      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb250cmFjdCUyMGxhd3xlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib-rb-4.0.3&q=80&w=1080",
+      "description": "Image for a blog post on compliance",
+      "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb250cmFjdCUyMGxhd3xlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "contract law"
     },
     {
       "id": "blog-post-3",
       "description": "An illustration of data flowing from on-premise servers to a cloud icon, representing IT modernization.",
-      "imageUrl": "https://images.unsplash.com/photo-1593435713507-b85f0962b514?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMG1pZ3JhdGlvbnxlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593435713507-b85f0962b514?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbG91ZCUyMG1pZ3JhdGlvbnxlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "cloud migration"
     },
     {
       "id": "project-air-force",
       "description": "An F-16 fighter jet on a runway, with maintenance crew in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1629810351817-d65e23348043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmMTYlMjBmaWdodGVyJTIwamV0fGVufDB8fHx8MTcyMjQ1MDIwOHww&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629810351817-d65e23348043?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmMTYlMjBmaWdodGVyJTIwamV0fGVufDB8fHx8MTcyMjQ1MDIwOHww&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "fighter jet"
     },
     {
       "id": "project-army",
       "description": "A soldier in uniform working on the electrical systems of a military vehicle.",
-      "imageUrl": "https://images.unsplash.com/photo-1566492348538-408933b9348f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2xkaWVycyUyMG1haW50ZW5hbmNlfGVufDB8fHx8MTcyMjQ1MDIwOHww&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1566492348538-408933b9348f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2xkaWVycyUyMG1haW50ZW5hbmNlfGVufDB8fHx8MTcyMjQ1MDIwOHww&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "soldiers maintenance"
     },
     {
       "id": "project-interior",
       "description": "A wide shot of the Hoover Dam, representing the Bureau of Reclamation.",
-      "imageUrl": "https://images.unsplash.com/photo-1616086799338-e64593582379?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob292ZXIlMjBkYW18ZW58MHx8fHwxNzIyNDUwMjA4fDA&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616086799338-e64593582379?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob292ZXIlMjBkYW18ZW58MHx8fHwxNzIyNDUwMjA4fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "hoover dam"
     },
     {
       "id": "project-dod-1",
       "description": "Technicians in coveralls performing maintenance on a military vehicle.",
-      "imageUrl": "https://images.unsplash.com/photo-1518492587258-7f9a1581561f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWxpdGFyeSUyMHZlaGljbGUlMjBtYWludGVuYW5jZXxlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1518492587258-7f9a1581561f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWxpdGFyeSUyMHZlaGljbGUlMjBtYWludGVuYW5jZXxlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "military maintenance"
     },
     {
       "id": "project-dod-2",
       "description": "Industrial workers in protective gear in a heavy manufacturing environment.",
-      "imageUrl": "https://images.unsplash.com/photo-1554412933-0388a1305a41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd29ya2Vyc3xlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554412933-0388a1305a41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd29ya2Vyc3xlbnwwfHx8fDE3MjI0NTAyMDh8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "industrial workers"
     },
     {
       "id": "project-usda",
       "description": "A scientist in a lab coat inspecting samples in a food safety laboratory.",
-      "imageUrl": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb29kJTIwc2FmZXR5JTIwbGFifGVufDB8fHx8MTcyMjQ1MDIwOHww&ixlib-rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb29kJTIwc2FmZXR5JTIwbGFifGVufDB8fHx8MTcyMjQ1MDIwOHww&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "food safety lab"
     }
   ]
