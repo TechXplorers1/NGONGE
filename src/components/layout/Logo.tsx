@@ -5,8 +5,8 @@ export function Logo(props: { className?: string }) {
     <Image
       src="https://github.com/Humer-tx/NGO-NGE/blob/main/NGO_LOGO.png?raw=true"
       alt="NGONGE LLC Logo"
-      width={32}
-      height={32}
+      width={48}
+      height={48}
       className={props.className}
       priority
     />
