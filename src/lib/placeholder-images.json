@@ -3,7 +3,7 @@
     {
       "id": "hero-banner",
       "description": "Hero banner showing the US Capitol building at dusk",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Hero_section.png?raw=true",
+      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/us_capitol%20building.png?raw=true",
       "imageHint": "US Capitol"
     },
     {
@@ -76,13 +76,13 @@
       "id": "case-study-2",
       "description": "Interior of a modern, well-lit office building, showcasing facility management.",
       "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/General%20Services%20Administration.png?raw=true",
-      "imageHint": "office building"
+      "imageHint": "modern office"
     },
     {
       "id": "case-study-3",
       "description": "A commercial laundry facility with rows of industrial washing machines, representing healthcare laundry services.",
       "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Veterans%20Health%20Administration.png?raw=true",
-      "imageHint": "healthcare laundry"
+      "imageHint": "laundry facility"
     },
     {
       "id": "case-study-4",
