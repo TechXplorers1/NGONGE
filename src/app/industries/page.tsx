@@ -1,17 +1,8 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { industries } from "@/lib/placeholder-data";
-import { Building, ShieldCheck, Star, Truck, HardHat } from "lucide-react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-
-const iconMap = {
-    Building,
-    ShieldCheck,
-    Star,
-    Truck,
-    HardHat,
-}
 
 export default function IndustriesPage() {
   return (
@@ -25,15 +16,11 @@ export default function IndustriesPage() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {industries.map((industry) => {
-            const Icon = iconMap[industry.icon as keyof typeof iconMap] || Building;
             return (
               <Link key={industry.title} href={industry.href} className="group h-full block">
                 <Card className="flex flex-col text-center h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                   <CardHeader>
-                      <div className="mx-auto bg-primary text-primary-foreground rounded-full p-4 w-fit transition-colors group-hover:bg-accent">
-                          <Icon className="h-8 w-8" />
-                      </div>
-                      <CardTitle className="pt-4 font-headline">{industry.title}</CardTitle>
+                      <CardTitle className="font-headline">{industry.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <CardDescription>{industry.description}</CardDescription>

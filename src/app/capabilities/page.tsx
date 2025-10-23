@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { allCapabilities } from "@/lib/placeholder-data";
-import { ArrowRight, Building, HardHat, Shirt, Truck, Smartphone, Code, BrainCircuit, Cloud } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import {
   Carousel,
@@ -9,17 +9,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
-const iconMap = {
-    Truck: Truck,
-    Building: Building,
-    Shirt: Shirt,
-    HardHat: HardHat,
-    Smartphone: Smartphone,
-    Code: Code,
-    BrainCircuit: BrainCircuit,
-    Cloud: Cloud,
-}
 
 export default function CapabilitiesPage() {
   return (
@@ -38,16 +27,12 @@ export default function CapabilitiesPage() {
             >
               <CarouselContent>
                 {allCapabilities.map((cap) => {
-                  const Icon = iconMap[cap.icon as keyof typeof iconMap] || Truck;
                   return (
                     <CarouselItem key={cap.title} className="basis-full md:basis-1/2 lg:basis-1/3">
                        <div className="p-1 h-full">
                         <Link href={cap.href} className="group h-full block">
                           <Card className="flex flex-col h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
-                            <CardHeader className="flex-row items-center gap-4">
-                              <div className="bg-primary text-primary-foreground p-3 rounded-full transition-colors group-hover:bg-accent">
-                                <Icon className="h-6 w-6" />
-                              </div>
+                            <CardHeader>
                               <CardTitle className="text-xl font-headline leading-tight">{cap.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="flex-grow">
