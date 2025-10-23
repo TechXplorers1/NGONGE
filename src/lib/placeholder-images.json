@@ -141,7 +141,7 @@
     {
       "id": "project-usda",
       "description": "A scientist in a lab coat inspecting samples in a food safety laboratory.",
-      "imageUrl": "/images/project-usda.jpg",
+      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Lab%20Coat%20Rental%20&%20Servicing.png?raw=true",
       "imageHint": "food safety lab"
     }
   ]
