@@ -362,9 +362,9 @@ export const certifications = [
 
 export const leadershipTeam = [
   {
-    name: 'Frank Ngonge',
+    name: 'Roland Mboumien',
     title: 'Founder & CEO',
-    bio: 'With over 20 years of experience in federal logistics, Frank leads NGONGE with a focus on mission success and client satisfaction. His strategic vision has been instrumental in the company\'s growth.',
+    bio: 'With over 20 years of experience in federal logistics, Roland leads NGONGE with a focus on mission success and client satisfaction. His strategic vision has been instrumental in the company\'s growth.',
     imageId: 'leader-1',
   },
   {
@@ -456,3 +456,4 @@ export const resources = [
     icon: Building
   }
 ];
+
