@@ -220,7 +220,7 @@ export const trustIndicators = [
     },
     {
         name: 'ISO 9001 Certified',
-        imageUrl: '/iso-9001-logo.png',
+        imageUrl: 'https://github.com/Humer-tx/NGO-NGE/blob/main/832_iso_9001_logo.jpg?raw=true',
         alt: 'ISO 9001 Certified Logo'
     },
     {
@@ -456,5 +456,6 @@ export const resources = [
     icon: Building
   }
 ];
+
 
 
