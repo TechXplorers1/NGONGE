@@ -3,7 +3,7 @@
     {
       "id": "hero-banner",
       "description": "Hero banner showing the US Capitol building at dusk",
-      "imageUrl": "/images/hero-banner.jpg",
+      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Hero_section.png?raw=true",
       "imageHint": "US Capitol"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "project-army",
       "description": "A soldier in uniform working on the electrical systems of a military vehicle.",
-      "imageUrl": "/images/project-army.jpg",
+      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Protective%20Uniform%20Rental.png?raw=true",
       "imageHint": "soldiers maintenance"
     },
     {
