@@ -215,7 +215,7 @@ export const trustIndicators = [
     },
     {
         name: 'SAM.gov Registered',
-        imageUrl: '/sam-gov-logo.png',
+        imageUrl: 'https://github.com/Humer-tx/NGO-NGE/blob/main/sam.gov_.jpg?raw=true',
         alt: 'SAM.gov Registered Logo'
     },
     {
@@ -456,6 +456,3 @@ export const resources = [
     icon: Building
   }
 ];
-
-
-
