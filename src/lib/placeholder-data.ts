@@ -223,11 +223,6 @@ export const trustIndicators = [
         imageUrl: 'https://github.com/Humer-tx/NGO-NGE/blob/main/832_iso_9001_logo.jpg?raw=true',
         alt: 'ISO 9001 Certified Logo'
     },
-    {
-        name: 'CAGE/DUNS Verified',
-        imageUrl: '/cage-duns-logo.png',
-        alt: 'CAGE/DUNS Verified Logo'
-    },
 ];
 
 export const caseStudies = [
@@ -449,7 +444,7 @@ export const resources = [
     downloadUrl: '#',
     icon: Truck
   },
-    {
+  {
     title: 'Facilities Support Brochure',
     description: 'Learn more about how we manage and maintain federal facilities for peak performance.',
     downloadUrl: '#',
