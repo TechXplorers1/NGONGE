@@ -47,7 +47,7 @@ export default function Home() {
           <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Trusted by Federal Agencies
           </h3>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
             {trustIndicators.map((indicator, i) => (
               <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
                 <div className="relative h-12 w-36">
