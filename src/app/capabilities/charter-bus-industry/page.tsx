@@ -1,31 +1,50 @@
+// src/app/capabilities/charter-bus-industry/page.tsx
+
 import { Truck } from 'lucide-react';
+import { PageHeader } from '@/components/shared/PageHeader'; 
+
+// Data for this specific service
+const SERVICE_TITLE = "Charter Bus Industry";
+const SERVICE_SUBTITLE = "Charter bus services for personnel and group transportation.";
+// Use an image ID that exists in your placeholder images
+const HERO_IMAGE_ID = "project-dod-1"; // Using an existing image ID from your data
 
 export default function CharterBusIndustryPage() {
-  return (
-    <article>
-        <div className="flex items-center gap-4 mb-4">
-            <div className="bg-primary text-primary-foreground p-3 rounded-full">
-                <Truck className="h-6 w-6" />
-            </div>
-            <h2>Charter Bus Industry</h2>
-        </div>
-      <p>
-        NGONGE provides safe, reliable, and comfortable charter bus services for government personnel, military groups, and official events. We ensure timely and efficient transportation for groups of any size.
-      </p>
-      
-      <h3>Our Services Include:</h3>
-      <ul>
-        <li><strong>Personnel & Troop Transport:</strong> Coordinated transportation for military units, government employees, and contractors for training, deployment, or official travel.</li>
-        <li><strong>Event & Conference Shuttles:</strong> Shuttle services for government conferences, summits, and other events, ensuring smooth and organized transit for attendees.</li>
-        <li><strong>VIP & Dignitary Transport:</strong> Discreet and professional transportation services with premium vehicles for high-profile officials and guests.</li>
-        <li><strong>Long-Distance & Inter-City Travel:</strong> Comfortable and modern coaches for long-haul trips, equipped with amenities to ensure a pleasant journey.</li>
-        <li><strong>Custom Itinerary Planning:</strong> Flexible route planning and logistics coordination to meet the specific needs of your group's travel itinerary.</li>
-      </ul>
+    return (
+        <>
+            {/* Use imageId prop that matches your placeholder images */}
+            <PageHeader
+                title={SERVICE_TITLE}
+                subtitle={SERVICE_SUBTITLE}
+                imageId={HERO_IMAGE_ID} 
+            />
 
-      <h3>Why Choose NGONGE for Charter Bus Services?</h3>
-      <p>
-        Our commitment to safety is paramount. We maintain a modern fleet of vehicles that undergo rigorous safety inspections, and our professional drivers are highly trained and vetted. With NGONGE, you can be confident that your group will arrive at their destination safely, comfortably, and on schedule.
-      </p>
-    </article>
-  );
+            {/* ARTICLE CONTENT - The rest of your page content */}
+            <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+                <div className="flex items-center gap-4 mb-4">
+                    <div className="bg-primary text-primary-foreground p-3 rounded-full">
+                        <Truck className="h-6 w-6" />
+                    </div>
+                    <h2 className="text-2xl font-semibold">Service Details</h2> 
+                </div>
+                <p>
+                    NGONGE provides safe, reliable, and comfortable charter bus services for government personnel, military groups, and official events. We ensure timely and efficient transportation for groups of any size.
+                </p>
+                
+                <h3>Our Services Include:</h3>
+                <ul>
+                    <li><strong>Personnel & Troop Transport:</strong> Coordinated transportation for military units, government employees, and contractors for training, deployment, or official travel.</li>
+                    <li><strong>Event & Conference Shuttles:</strong> Shuttle services for government conferences, summits, and other events, ensuring smooth and organized transit for attendees.</li>
+                    <li><strong>VIP & Dignitary Transport:</strong> Discreet and professional transportation services with premium vehicles for high-profile officials and guests.</li>
+                    <li><strong>Long-Distance & Inter-City Travel:</strong> Comfortable and modern coaches for long-haul trips, equipped with amenities to ensure a pleasant journey.</li>
+                    <li><strong>Custom Itinerary Planning:</strong> Flexible route planning and logistics coordination to meet the specific needs of your group's travel itinerary.</li>
+                </ul>
+
+                <h3>Why Choose NGONGE for Charter Bus Services?</h3>
+                <p>
+                    Our commitment to safety is paramount. We maintain a modern fleet of vehicles that undergo rigorous safety inspections, and our professional drivers are highly trained and vetted. With NGONGE, you can be confident that your group will arrive at their destination safely, comfortably, and on schedule.
+                </p>
+            </article>
+        </>
+    );
 }
