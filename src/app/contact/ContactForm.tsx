@@ -15,9 +15,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { submitContactForm } from "./actions";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -44,23 +44,38 @@ export function ContactForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    // Note: File handling requires a more complex setup, e.g., direct upload to Firebase Storage.
-    // This server action simulates processing the form data.
-    const result = await submitContactForm(values);
 
-    if (result.success) {
+    const templateParams = {
+      name: values.name,
+      agency: values.agency,
+      email: values.email,
+      phone: values.phone || "N/A",
+      projectDescription: values.projectDescription,
+    };
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
       toast({
-        title: "Submission Successful",
-        description: "Thank you for your message. We will be in touch shortly.",
+        title: "✅ Submission Successful",
+        description: "Thank you for your message. We’ll be in touch shortly.",
       });
+
       form.reset();
-    } else {
+    } catch (error) {
+      console.error("EmailJS error:", error);
       toast({
         variant: "destructive",
-        title: "Submission Failed",
-        description: result.message || "An unexpected error occurred. Please try again.",
+        title: "❌ Submission Failed",
+        description: "An unexpected error occurred. Please try again.",
       });
     }
+
     setIsSubmitting(false);
   }
 
@@ -94,32 +109,32 @@ export function ContactForm() {
           )}
         />
         <div className="grid sm:grid-cols-2 gap-6">
-            <FormField
+          <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
-                <FormItem>
+              <FormItem>
                 <FormLabel>Email Address</FormLabel>
                 <FormControl>
-                    <Input placeholder="name@agency.gov" {...field} />
+                  <Input placeholder="name@agency.gov" {...field} />
                 </FormControl>
                 <FormMessage />
-                </FormItem>
+              </FormItem>
             )}
-            />
-            <FormField
+          />
+          <FormField
             control={form.control}
             name="phone"
             render={({ field }) => (
-                <FormItem>
+              <FormItem>
                 <FormLabel>Phone Number (Optional)</FormLabel>
                 <FormControl>
-                    <Input placeholder="(555) 123-4567" {...field} />
+                  <Input placeholder="(555) 123-4567" {...field} />
                 </FormControl>
                 <FormMessage />
-                </FormItem>
+              </FormItem>
             )}
-            />
+          />
         </div>
         <FormField
           control={form.control}
