@@ -86,7 +86,7 @@ export default function PastPerformancePage() {
                 <div className="inline-flex items-center gap-2">
                     <span className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Partner Experience</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mt-2">Vestis Past Projects</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mt-2">Past Projects</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">
                     Key projects performed by our strategic partner, Vestis, showcasing their extensive experience.
                 </p>
