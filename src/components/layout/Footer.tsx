@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { companyCodes, contactInfo } from "@/lib/placeholder-data";
 import { Logo } from "./Logo";
@@ -16,8 +17,9 @@ export function Footer() {
               Mission-Ready Logistics, IT, and Facility Support for Federal Operations.
             </p>
             <div className="text-sm text-muted-foreground">
-                <p><strong>UIED:</strong> {companyCodes.uied}</p>
+                <p><strong>UEID:</strong> {companyCodes.uied}</p>
                 <p><strong>DUNS:</strong> {companyCodes.duns}</p>
+                <p><strong>EIN:</strong> {companyCodes.ein}</p>
                 <p><strong>CAGE:</strong> {companyCodes.cage}</p>
             </div>
           </div>

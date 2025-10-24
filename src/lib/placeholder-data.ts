@@ -427,9 +427,10 @@ export const contactInfo = [
 ];
 
 export const companyCodes = {
-    uied: "ABC123DEF456",
-    duns: "123456789",
-    cage: "98765"
+    uied: "ETYLDMH63LM9",
+    duns: "119302889",
+    ein: "99-3636389",
+    cage: "9Y1F2"
 }
 
 export const resources = [
