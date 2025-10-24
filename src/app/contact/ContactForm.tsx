@@ -25,7 +25,6 @@ const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
   phone: z.string().optional(),
   projectDescription: z.string().min(10, { message: "Please provide a brief description." }),
-  file: z.any().optional(),
 });
 
 export function ContactForm() {
@@ -134,19 +133,6 @@ export function ContactForm() {
                   className="min-h-[120px]"
                   {...field}
                 />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="file"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Attach File (e.g., SOW, RFI)</FormLabel>
-              <FormControl>
-                <Input type="file" {...form.register('file')} />
               </FormControl>
               <FormMessage />
             </FormItem>
