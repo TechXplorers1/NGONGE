@@ -1,3 +1,4 @@
+
 import { PageHeader } from "@/components/shared/PageHeader";
 import { contactInfo } from "@/lib/placeholder-data";
 import { ContactForm } from "./ContactForm";
@@ -38,10 +39,16 @@ export default function ContactPage() {
             </div>
             <div className="mt-8">
                 <h3 className="text-2xl font-headline font-bold text-primary">Our Location</h3>
-                <div className="mt-4 h-64 bg-muted rounded-lg flex items-center justify-center">
-                    <Link href="https://share.google/NgWIdQphUjqkpVyhw" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-                      View on Google Maps
-                    </Link>
+                <div className="mt-4 h-96 bg-muted rounded-lg overflow-hidden">
+                   <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.533439099354!2d-79.91972232497699!3d36.0076939724103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531a7407519a8d%3A0xad8697650c33a39b!2sNGONGE%20Company!5e0!3m2!1sen!2sus!4v1716315264633!5m2!1sen!2sus"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen={true}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
                 </div>
             </div>
           </div>
