@@ -2,6 +2,7 @@ import { PageHeader } from "@/components/shared/PageHeader";
 import { contactInfo } from "@/lib/placeholder-data";
 import { ContactForm } from "./ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -38,7 +39,9 @@ export default function ContactPage() {
             <div className="mt-8">
                 <h3 className="text-2xl font-headline font-bold text-primary">Our Location</h3>
                 <div className="mt-4 h-64 bg-muted rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Map placeholder</p>
+                    <Link href="https://share.google/NgWIdQphUjqkpVyhw" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                      View on Google Maps
+                    </Link>
                 </div>
             </div>
           </div>
