@@ -72,12 +72,6 @@ export const allCapabilities = [
         icon: 'Building' as const,
     },
     { 
-        title: 'Septic Tank and Related Services', 
-        href: '/capabilities/septic-tank-services',
-        description: 'Professional maintenance and services for septic systems.',
-        icon: 'HardHat' as const,
-    },
-    { 
         title: 'Industrial Laundry Services', 
         href: '/capabilities/industrial-laundry-services',
         description: 'High-volume laundry services for industrial and commercial needs.',
@@ -450,6 +444,8 @@ export const resources = [
     title: 'Facilities Support Brochure',
     description: 'Learn more about how we manage and maintain federal facilities for peak performance.',
     downloadUrl: '#',
-    icon: Building
+icon: Building
   }
 ];
+
+    
