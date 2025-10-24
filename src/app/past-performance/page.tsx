@@ -59,11 +59,6 @@ export default function PastPerformancePage() {
 
   return (
     <>
-      <PageHeader
-        title="Past Performance"
-        subtitle="Proven results and successful outcomes for our federal partners."
-        imageId="page-header-performance"
-      />
       <div className="container mx-auto py-12 sm:py-20 space-y-16 sm:space-y-24">
         <section id="ngonge-projects">
             <div className="text-center">

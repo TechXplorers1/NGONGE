@@ -42,7 +42,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   {
     "id": "page-header-certifications",
     "description": "A close-up of a person signing an official document with a fountain pen.",
-    "imageUrl": "/images/page-header-certifications.jpg",
+    "imageUrl": "/images/About NGO.jpeg",
     "imageHint": "document signing"
   },
   {
@@ -149,49 +149,49 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   // --- Industry Sector Images ---
   {
     id: "federal-government",
-    imageUrl: "/images/federal-government.jpg",
+    imageUrl: "/images/Federal Government.jpg",
     description: "Federal government services",
     imageHint: "Federal government building"
   },
   {
     id: "department-of-defense",
-    imageUrl: "/images/department-of-defense.jpg",
+    imageUrl: "/images/Department of Defense Industry.jpg",
     description: "Department of Defense services",
     imageHint: "Department of Defense operations"
   },
   {
-    id: "health-care",
-    imageUrl: "/images/health-care.jpg",
+    id: "Health Care",
+    imageUrl: "/images/Health Care.jpg",
     description: "Healthcare services",
     imageHint: "Healthcare facility"
   },
   {
-    id: "manufacturing",
+    id: "Manufacturing",
     imageUrl: "/images/manufacturing.jpg",
     description: "Manufacturing industry services",
     imageHint: "Manufacturing plant"
   },
   {
-    id: "finance-banking",
-    imageUrl: "/images/finance-banking.jpg",
+    id: "Finance & Banking",
+    imageUrl: "/images/Finance & Banking.jpg",
     description: "Finance and banking services",
     imageHint: "Banking and finance"
   },
   {
     id: "automotive",
-    imageUrl: "/images/automotive.jpg",
+    imageUrl: "/images/Automotive.jpg",
     description: "Automotive industry services",
     imageHint: "Automotive industry"
   },
   {
     id: "media-advertising",
-    imageUrl: "/images/media-advertising.jpg",
+    imageUrl: "/images/Media and Advertising.jpg",
     description: "Media and advertising services",
     imageHint: "Media and advertising"
   },
   {
     id: "commercial-sector",
-    imageUrl: "/images/commercial-sector.jpg",
+    imageUrl: "/images/Commercial Sector.jpg",
     description: "Commercial sector services",
     imageHint: "Commercial business"
   },
