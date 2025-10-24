@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { allCapabilities } from "@/lib/placeholder-data";
 import { ArrowRight } from "lucide-react";
@@ -17,7 +18,7 @@ export default function CapabilitiesPage() {
       <p>
         NGONGE LLC offers a diverse range of services designed to meet the complex needs of modern federal agencies. Our team of experts is equipped to handle challenges in logistics, facility management, and beyond, ensuring that your operations run smoothly and efficiently. Our approach is built on a foundation of reliability, security, and innovation.
       </p>
-       <div className="not-prose mt-12">
+       <div className="not-prose mt-10">
             <Carousel
               opts={{
                 align: "start",

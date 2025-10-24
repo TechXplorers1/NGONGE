@@ -32,22 +32,22 @@ export default function Home() {
             NGONGE delivers unparalleled logistics, facility support, and IT modernization to ensure your agency's success.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up [animation-delay:0.4s]">
-            <Button asChild size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform hover:scale-105">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform hover:scale-105">
               <Link href="/resources">Download Capability Statement</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-foreground/80 text-foreground hover:bg-foreground hover:text-background transition-transform hover:scale-105">
+            <Button asChild size="lg" variant="secondary" className="transition-transform hover:scale-105">
               <Link href="/contact">Request a Proposal</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      <section id="trust-indicators" className="bg-background py-12">
+      <section id="trust-indicators" className="bg-background py-12 sm:py-16">
         <div className="container mx-auto text-center">
           <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Trusted by Federal Agencies
           </h3>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
+          <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 items-center max-w-4xl mx-auto">
             {trustIndicators.map((indicator, i) => (
               <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
                 <div className="relative h-16 w-36">
@@ -107,7 +107,7 @@ export default function Home() {
               Delivering excellence and measurable results for our federal partners.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {caseStudies.slice(0, 3).map((study, index) => {
               const studyImage = PlaceHolderImages.find(p => p.id === study.imageId);
               return (

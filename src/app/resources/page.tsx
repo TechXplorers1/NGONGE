@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/shared/PageHeader";
@@ -15,7 +16,7 @@ export default function ResourcesPage() {
         subtitle="Downloadable documents and insights from our team."
         imageId="page-header-resources"
       />
-      <div className="container mx-auto py-16 sm:py-24 space-y-16">
+      <div className="container mx-auto py-12 sm:py-20 space-y-16 sm:space-y-24">
         <section id="downloads">
             <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Documents & Downloads</h2>
@@ -23,7 +24,7 @@ export default function ResourcesPage() {
                     Access our official documents to learn more about our capabilities and service offerings.
                 </p>
             </div>
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {resources.map((resource) => (
                     <Card key={resource.title} className="flex flex-col group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                         <CardHeader className="flex-row items-center gap-4">
@@ -55,7 +56,7 @@ export default function ResourcesPage() {
               Industry analysis and company news from the NGONGE team.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {blogPosts.map((post) => {
               const postImage = PlaceHolderImages.find(p => p.id === post.imageId);
               return (

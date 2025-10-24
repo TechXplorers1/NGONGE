@@ -3,7 +3,6 @@ import { PageHeader } from "@/components/shared/PageHeader";
 import { contactInfo } from "@/lib/placeholder-data";
 import { ContactForm } from "./ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -13,7 +12,7 @@ export default function ContactPage() {
         subtitle="Let's discuss how NGONGE can support your mission."
         imageId="page-header-contact"
       />
-      <div className="container mx-auto py-16 sm:py-24">
+      <div className="container mx-auto py-12 sm:py-20">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-headline font-bold text-primary">Get in Touch</h2>
@@ -29,7 +28,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <CardTitle className="text-lg">{info.title}</CardTitle>
-                      <a href={info.href} className="text-muted-foreground hover:text-accent transition-colors">
+                      <a href={info.href} className="text-muted-foreground hover:text-accent transition-colors break-all">
                         {info.value}
                       </a>
                     </div>
@@ -39,7 +38,7 @@ export default function ContactPage() {
             </div>
             <div className="mt-8">
                 <h3 className="text-2xl font-headline font-bold text-primary">Our Location</h3>
-                <div className="mt-4 h-96 bg-muted rounded-lg overflow-hidden">
+                <div className="mt-4 aspect-video h-auto bg-muted rounded-lg overflow-hidden">
                    <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.533439099354!2d-77.863!3d36.007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aefb2e4f62a951%3A0x4c2b9b7f5b8a5a7d!2s4678%20N%20Browntown%20Rd%2C%20Battleboro%2C%20NC%2027809!5e0!3m2!1sen!2sus!4v1716315264633!5m2!1sen!2sus"
                       width="100%"

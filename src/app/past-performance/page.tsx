@@ -15,7 +15,7 @@ export default function PastPerformancePage() {
     return (
         <Card className="flex flex-col">
             {studyImage && (
-                <div className="relative h-56 w-full">
+                <div className="relative aspect-video w-full">
                 <Image
                     src={studyImage.imageUrl}
                     alt={study.projectTitle}
@@ -64,7 +64,7 @@ export default function PastPerformancePage() {
         subtitle="Proven results and successful outcomes for our federal partners."
         imageId="page-header-performance"
       />
-      <div className="container mx-auto py-16 sm:py-24 space-y-16">
+      <div className="container mx-auto py-12 sm:py-20 space-y-16 sm:space-y-24">
         <section id="ngonge-projects">
             <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Our Projects</h2>
@@ -72,7 +72,7 @@ export default function PastPerformancePage() {
                     A selection of contracts successfully delivered by NGONGE Federal Solutions.
                 </p>
             </div>
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {ngonjeCaseStudies.map((study) => (
                     <ProjectCard key={study.contractNumber} study={study} />
                 ))}
@@ -91,7 +91,7 @@ export default function PastPerformancePage() {
                     Key projects performed by our strategic partner, Vestis, showcasing their extensive experience.
                 </p>
             </div>
-             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {vestisCaseStudies.map((study) => (
                     <ProjectCard key={study.contractNumber} study={study} />
                 ))}

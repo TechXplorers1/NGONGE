@@ -7,14 +7,14 @@ import { ArrowRight } from "lucide-react";
 export default function IndustriesPage() {
   return (
     <>
-      <div className="container mx-auto py-16 sm:py-24">
+      <div className="container mx-auto py-12 sm:py-20">
         <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Our Market Focus</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
                 We apply our core capabilities to meet the unique challenges and requirements of various industries, ensuring mission success and operational excellence.
             </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {industries.map((industry) => {
             return (
               <Link key={industry.title} href={industry.href} className="group h-full block">

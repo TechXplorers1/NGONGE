@@ -14,9 +14,9 @@ export default function AboutPage() {
         subtitle="Our Commitment to Excellence in Federal Service"
         imageId="page-header-about"
       />
-      <div className="container mx-auto py-16 sm:py-24 space-y-16">
+      <div className="container mx-auto py-12 sm:py-20 space-y-16 sm:space-y-24">
         <section id="mission-values">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h2 className="text-3xl font-headline font-bold text-primary">Our Mission</h2>
               <p className="mt-4 text-lg text-muted-foreground">
@@ -59,7 +59,7 @@ export default function AboutPage() {
               Experienced leaders dedicated to serving our nation.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {leadershipTeam.map((leader) => {
               const leaderImage = PlaceHolderImages.find((img) => img.id === leader.imageId);
               return (
@@ -93,17 +93,17 @@ export default function AboutPage() {
                     A history of growth and commitment to our federal partners.
                 </p>
             </div>
-            <div className="mt-12 max-w-3xl mx-auto">
+            <div className="mt-10 max-w-3xl mx-auto">
                 <div className="relative">
-                    <div className="absolute left-0 h-full w-0.5 bg-border" aria-hidden="true"></div>
+                    <div className="absolute left-3 h-full w-0.5 bg-border" aria-hidden="true"></div>
                     {companyTimeline.map((item, index) => (
-                        <div key={item.year} className="relative pl-8 mb-8">
-                           <div className="absolute left-0 -translate-x-1/2 bg-background p-1">
+                        <div key={item.year} className="relative pl-12 mb-8">
+                           <div className="absolute left-3 top-1 -translate-x-1/2 bg-background p-1">
                                <div className="h-4 w-4 rounded-full bg-primary ring-4 ring-background"></div>
                            </div>
                            <div className="text-left">
                                <p className="font-bold text-accent text-lg">{item.year}</p>
-                               <p className="text-muted-foreground">{item.event}</p>
+                               <p className="mt-1 text-muted-foreground">{item.event}</p>
                            </div>
                         </div>
                     ))}
@@ -113,7 +113,7 @@ export default function AboutPage() {
 
         <section id="codes" className="text-center">
              <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Company Information</h2>
-             <div className="mt-6 flex justify-center gap-8">
+             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 sm:gap-8">
                 <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                     <CardHeader className="p-0">
                         <CardTitle className="text-lg text-muted-foreground">DUNS Number</CardTitle>

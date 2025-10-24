@@ -1,3 +1,4 @@
+
 import { PageHeader } from "@/components/shared/PageHeader";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,14 +13,14 @@ export default function CertificationsPage() {
         subtitle="Our commitment to quality, safety, and excellence, validated by industry and government standards."
         imageId="page-header-certifications"
       />
-      <div className="container mx-auto py-16 sm:py-24">
+      <div className="container mx-auto py-12 sm:py-20">
         <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Validated Excellence</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
                 We hold key federal and industry certifications that demonstrate our capability and commitment to delivering high-quality services.
             </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {certifications.map((cert) => (
             <Card key={cert.name} className="flex flex-col items-center text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
               <CardHeader>

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -18,6 +19,7 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { navLinks } from "@/lib/placeholder-data";
 import { cn } from "@/lib/utils";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -35,7 +37,7 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground group-hover:text-accent-foreground">
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground group-hover:text-accent-foreground/90">
             {children}
           </p>
         </a>
@@ -116,7 +118,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
 
-            <SheetContent side="left" className="p-0">
+            <SheetContent side="left" className="p-0 pr-6 w-full sm:max-w-sm">
               <div className="flex justify-between items-center p-4 border-b">
                 <Link
                   href="/"
@@ -136,50 +138,54 @@ export function Header() {
                 </Button>
               </div>
 
-              <div className="mt-6 flex flex-col space-y-1 p-2">
-                {navLinks.map((link) => {
-                  if (link.children) {
-                    return (
-                      <div key={link.name} className="px-2 py-1">
-                        <p className="font-semibold text-muted-foreground">
-                          {link.name}
-                        </p>
-                        <div className="flex flex-col space-y-1 pl-2 mt-2">
-                          {link.children.map((child) => (
-                            <Link
-                              key={child.title}
-                              href={child.href}
-                              className={cn(
-                                "text-muted-foreground hover:text-foreground p-1 rounded-md",
-                                pathname === child.href &&
-                                  "text-accent font-semibold"
-                              )}
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              {child.title}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    );
-                  }
+              <div className="mt-6 flex flex-col p-2">
+                 <Accordion type="single" collapsible className="w-full">
+                  {navLinks.map((link) => {
+                    if (link.children) {
+                      return (
+                        <AccordionItem value={link.name} key={link.name} className="border-none">
+                          <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
+                            {link.name}
+                          </AccordionTrigger>
+                          <AccordionContent className="pl-4 pb-0">
+                            <div className="flex flex-col space-y-1">
+                            {link.children.map((child) => (
+                              <Link
+                                key={child.title}
+                                href={child.href}
+                                className={cn(
+                                  "text-muted-foreground hover:text-foreground p-2 rounded-md",
+                                  pathname === child.href &&
+                                    "text-accent font-semibold"
+                                )}
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {child.title}
+                              </Link>
+                            ))}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      );
+                    }
 
-                  return (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      className={cn(
-                        "text-lg font-medium p-2 rounded-md",
-                        pathname === link.href
-                          ? "bg-accent text-accent-foreground"
-                          : "hover:bg-muted"
-                      )}
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {link.name}
-                    </Link>
-                  );
-                })}
+                    return (
+                      <Link
+                        key={link.name}
+                        href={link.href}
+                        className={cn(
+                          "text-lg font-medium p-3 rounded-md block border-b",
+                           pathname === link.href
+                            ? "bg-accent text-accent-foreground"
+                            : "hover:bg-muted"
+                        )}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {link.name}
+                      </Link>
+                    );
+                  })}
+                 </Accordion>
               </div>
             </SheetContent>
           </Sheet>
