@@ -50,12 +50,12 @@ export default function Home() {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
             {trustIndicators.map((indicator, i) => (
               <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
-                <div className="relative h-12 w-36">
+                <div className="relative h-16 w-36">
                     <Image 
                         src={indicator.imageUrl}
                         alt={indicator.alt}
                         fill
-                        className="object-contain filter grayscale transition-all duration-300 hover:grayscale-0 opacity-60 hover:opacity-100"
+                        className="object-contain"
                     />
                 </div>
               </div>
