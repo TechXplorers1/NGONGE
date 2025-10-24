@@ -409,8 +409,8 @@ export const contactInfo = [
     {
         icon: Mail,
         title: "Email",
-        value: "proposals@ngonge.com",
-        href: "mailto:proposals@ngonge.com"
+        value: "roland.mboumien@ngonge.com",
+        href: "mailto:roland.mboumien@ngonge.com"
     },
     {
         icon: Phone,

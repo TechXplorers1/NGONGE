@@ -26,7 +26,7 @@ export async function submitContactForm(values: z.infer<typeof formSchema>) {
 
     const { data, error } = await resend.emails.send({
       from: 'NGONGE RFP <proposals@ngonge.com>',
-      to: 'proposals@ngonge.com',
+      to: 'roland.mboumien@ngonge.com',
       reply_to: email,
       subject: `New RFP Request from ${name} (${agency})`,
       react: ContactRequestEmail({ name, agency, email, phone, projectDescription }),
