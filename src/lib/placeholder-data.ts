@@ -427,6 +427,7 @@ export const contactInfo = [
 ];
 
 export const companyCodes = {
+    uied: "ABC123DEF456",
     duns: "123456789",
     cage: "98765"
 }

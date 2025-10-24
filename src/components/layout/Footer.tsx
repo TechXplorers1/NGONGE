@@ -16,6 +16,7 @@ export function Footer() {
               Mission-Ready Logistics, IT, and Facility Support for Federal Operations.
             </p>
             <div className="text-sm text-muted-foreground">
+                <p><strong>UIED:</strong> {companyCodes.uied}</p>
                 <p><strong>DUNS:</strong> {companyCodes.duns}</p>
                 <p><strong>CAGE:</strong> {companyCodes.cage}</p>
             </div>
