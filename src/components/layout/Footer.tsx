@@ -31,7 +31,7 @@ export function Footer() {
                                 <li><Link href="/capabilities/facilities-support" className="text-sm text-muted-foreground hover:text-accent">Facilities</Link></li>
                                 <li><Link href="/capabilities/laundry-linen-services" className="text-sm text-muted-foreground hover:text-accent">Laundry</Link></li>
                                 <li><Link href="/capabilities/janitorial-services" className="text-sm text-muted-foreground hover:text-accent">Janitorial</Link></li>
-                                <li><Link href="/capabilities" className="text-sm text-accent hover:underline">View All</Link></li>
+                        
                             </ul>
                         </div>
 
