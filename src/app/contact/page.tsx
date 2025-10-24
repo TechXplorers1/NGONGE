@@ -41,7 +41,7 @@ export default function ContactPage() {
                 <h3 className="text-2xl font-headline font-bold text-primary">Our Location</h3>
                 <div className="mt-4 h-96 bg-muted rounded-lg overflow-hidden">
                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.533439099354!2d-79.91972232497699!3d36.0076939724103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531a7407519a8d%3A0xad8697650c33a39b!2sNGONGE%20Company!5e0!3m2!1sen!2sus!4v1716315264633!5m2!1sen!2sus"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.533439099354!2d-77.863!3d36.007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aefb2e4f62a951%3A0x4c2b9b7f5b8a5a7d!2s4678%20N%20Browntown%20Rd%2C%20Battleboro%2C%20NC%2027809!5e0!3m2!1sen!2sus!4v1716315264633!5m2!1sen!2sus"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
