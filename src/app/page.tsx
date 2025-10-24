@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -42,7 +41,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="trust-indicators" className="bg-background py-12 sm:py-16">
+      {/* Reduced vertical padding from py-12 sm:py-16 to py-10 sm:py-14 */}
+      <section id="trust-indicators" className="bg-background py-10 sm:py-14">
         <div className="container mx-auto text-center">
           <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Trusted by Federal Agencies
@@ -50,7 +50,8 @@ export default function Home() {
           <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 items-center max-w-4xl mx-auto">
             {trustIndicators.map((indicator, i) => (
               <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
-                <div className="relative h-16 w-36">
+                {/* Increased image size from h-16 w-36 to h-20 w-48 */}
+                <div className="relative h-20 w-48">
                     <Image 
                         src={indicator.imageUrl}
                         alt={indicator.alt}
@@ -64,7 +65,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="capabilities" className="py-16 sm:py-24 bg-card">
+      {/* Reduced vertical padding from py-16 sm:py-24 to py-12 sm:py-20 */}
+      <section id="capabilities" className="py-12 sm:py-20 bg-card">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Our Core Capabilities</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
@@ -99,7 +101,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="past-performance" className="py-16 sm:py-24 bg-background">
+      {/* Reduced vertical padding from py-16 sm:py-24 to py-12 sm:py-20 */}
+      <section id="past-performance" className="py-12 sm:py-20 bg-background">
         <div className="container mx-auto">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Proven Past Performance</h2>

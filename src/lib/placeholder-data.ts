@@ -204,17 +204,17 @@ export const navLinks = [
 export const trustIndicators = [
     {
         name: 'GSA Advantage',
-        imageUrl: 'https://www.gsaadvantage.gov/images/adv19/adv19-nav-logo.png',
+        imageUrl: '/images/adv19-nav-logo.png',
         alt: 'GSA Advantage Logo'
     },
     {
         name: 'SAM.gov Registered',
-        imageUrl: 'https://github.com/Humer-tx/NGO-NGE/blob/main/sam.gov_.jpg?raw=true',
+        imageUrl: '/images/sam.gov_.jpg',
         alt: 'SAM.gov Registered Logo'
     },
     {
         name: 'ISO 9001 Certified',
-        imageUrl: 'https://github.com/Humer-tx/NGO-NGE/blob/main/832_iso_9001_logo.jpg?raw=true',
+        imageUrl: '/images/832_iso_9001_logo.jpg',
         alt: 'ISO 9001 Certified Logo'
     },
 ];
@@ -444,7 +444,7 @@ export const resources = [
     title: 'Facilities Support Brochure',
     description: 'Learn more about how we manage and maintain federal facilities for peak performance.',
     downloadUrl: '#',
-icon: Building
+    icon: Building
   }
 ];
 

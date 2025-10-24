@@ -3,7 +3,7 @@
     {
       "id": "hero-banner",
       "description": "Hero banner showing the US Capitol building at dusk",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/us_capitol%20building.png?raw=true",
+      "imageUrl": "/images/us_capital building.png",
       "imageHint": "US Capitol"
     },
     {
@@ -48,12 +48,12 @@
       "imageUrl": "/images/page-header-contact.jpg",
       "imageHint": "contact phone"
     },
-    {
-      "id": "leader-1",
-      "description": "Professional headshot of a confident male executive in a suit.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/founder.jpeg?raw=true",
-      "imageHint": "professional headshot"
-    },
+   {
+  "id": "leader-1",
+  "description": "Professional headshot of a confident male executive in a suit.",
+  "imageUrl": "/images/founder.jpeg",
+  "imageHint": "professional headshot"
+},
     {
       "id": "leader-2",
       "description": "Professional headshot of a confident female executive in a modern office.",
@@ -69,19 +69,19 @@
     {
       "id": "case-study-1",
       "description": "A military cargo plane being loaded with supplies, representing secure logistics.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Department%20of%20Defense.png?raw=true",
+      "imageUrl": "/images/Department of Defense.jpeg",
       "imageHint": "military cargo plane"
     },
     {
       "id": "case-study-2",
       "description": "Interior of a modern, well-lit office building, showcasing facility management.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/General%20Services%20Administration.png?raw=true",
+      "imageUrl": "/images/General Service Administration.jpeg",
       "imageHint": "modern office"
     },
     {
       "id": "case-study-3",
       "description": "A commercial laundry facility with rows of industrial washing machines, representing healthcare laundry services.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Veterans%20Health%20Administration.png?raw=true",
+      "imageUrl": "/images/Veterans Health Administration.jpeg",
       "imageHint": "laundry facility"
     },
     {
@@ -111,37 +111,37 @@
     {
       "id": "project-air-force",
       "description": "An F-16 fighter jet on a runway, with maintenance crew in the background.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/FE_Warren.png?raw=true",
+      "imageUrl": "/images/FE Warren Protective Clothing.png",
       "imageHint": "fighter jet"
     },
     {
       "id": "project-army",
       "description": "A soldier in uniform working on the electrical systems of a military vehicle.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Protective%20Uniform%20Rental.png?raw=true",
+      "imageUrl": "/images/Protective Uniform Rental.png",
       "imageHint": "soldiers maintenance"
     },
     {
       "id": "project-interior",
       "description": "A wide shot of the Hoover Dam, representing the Bureau of Reclamation.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Rental%20and%20Laundry%20Services.png?raw=true",
+      "imageUrl": "/images/Rental and Laundry Services.png",
       "imageHint": "hoover dam"
     },
     {
       "id": "project-dod-1",
       "description": "Technicians in coveralls performing maintenance on a military vehicle.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Coverall%20Laundry%20Services.png?raw=true",
+      "imageUrl": "/images/Coverall Laundry Services.png",
       "imageHint": "military maintenance"
     },
     {
       "id": "project-dod-2",
       "description": "Industrial workers in protective gear in a heavy manufacturing environment.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Industrial_Coverall_Rental_Laundry.png?raw=true",
+      "imageUrl": "/images/Industrial Coverall Rental & Laundry.png",
       "imageHint": "industrial workers"
     },
     {
       "id": "project-usda",
       "description": "A scientist in a lab coat inspecting samples in a food safety laboratory.",
-      "imageUrl": "https://github.com/Humer-tx/NGO-NGE/blob/main/Lab%20Coat%20Rental%20&%20Servicing.png?raw=true",
+      "imageUrl": "/images/Lab Coat Rental & Servicing.png",
       "imageHint": "food safety lab"
     }
   ]
