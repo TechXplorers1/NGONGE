@@ -1,10 +1,9 @@
+
 "use server";
 
 import * as z from "zod";
 import { Resend } from "resend";
 import { ContactRequestEmail } from "@/components/emails/ContactRequestEmail";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const formSchema = z.object({
   name: z.string(),
@@ -20,6 +19,8 @@ export async function submitContactForm(values: z.infer<typeof formSchema>) {
   if (!parsed.success) {
     return { success: false, message: "Invalid form data." };
   }
+  
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { name, agency, email, phone, projectDescription } = parsed.data;
 
