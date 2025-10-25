@@ -357,15 +357,15 @@ export const leadershipTeam = [
     imageId: 'leader-1',
   },
   {
-    name: 'Sanda Vighen',
-    title: 'Chief Operating Officer',
-    bio: 'Sanda oversees all operational aspects of NGONGE. Her expertise in facility management and process optimization ensures that we deliver efficient and high-quality services to every government partner.',
+    name: 'Elvis Wianda',
+    title: 'Technology Strategy & Automation Advisor',
+    bio: 'Elvis Wianda helps businesses identify and integrate the right technologies to scale efficiently. With expertise in AI tools, website hosting, and process automation, he guides teams in selecting cost-effective solutions that enhance productivity and streamline operations. Elvis bridges strategy and execution — transforming business needs into smart, automated systems that work..',
     imageId: 'leader-2',
   },
   {
-    name: 'Godwill Tumban',
-    title: 'Chief Financial Officer',
-    bio: 'Godwill is a master of supply chain management. He directs our transportation and logistics division, ensuring that every delivery is secure, on-time, and within budget.',
+    name: 'Brian Scott',
+    title: 'Cybersecurity Strategy & Risk Management Advisor',
+    bio: 'Brian Scott is an experienced Cyber Information Assurance Engineer with 10+ years in federal defense cybersecurity. Skilled in NIST 800-53, RMF, FISMA, and continuous monitoring, he leads security assessments, accreditations, and vulnerability management to ensure systems achieve and maintain ATO compliance.',
     imageId: 'leader-3',
   },
 ];

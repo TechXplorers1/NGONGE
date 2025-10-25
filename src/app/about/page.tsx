@@ -114,12 +114,28 @@ export default function AboutPage() {
                 <section id="codes" className="text-center">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Company Information</h2>
                     <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 sm:gap-8">
+                      <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <CardHeader className="p-0">
+                                <CardTitle className="text-lg text-muted-foreground">UEID</CardTitle>
+                            </CardHeader>
+                            <CardContent className="p-0 mt-2">
+                                <p className="text-2xl font-bold font-code text-primary">{companyCodes.uied}</p>
+                            </CardContent>
+                        </Card>
                         <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                             <CardHeader className="p-0">
                                 <CardTitle className="text-lg text-muted-foreground">DUNS Number</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0 mt-2">
                                 <p className="text-2xl font-bold font-code text-primary">{companyCodes.duns}</p>
+                            </CardContent>
+                        </Card>
+                        <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                            <CardHeader className="p-0">
+                                <CardTitle className="text-lg text-muted-foreground">EIN</CardTitle>
+                            </CardHeader>
+                            <CardContent className="p-0 mt-2">
+                                <p className="text-2xl font-bold font-code text-primary">{companyCodes.ein}</p>
                             </CardContent>
                         </Card>
                         <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">

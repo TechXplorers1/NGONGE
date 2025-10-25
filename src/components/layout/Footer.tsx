@@ -50,7 +50,7 @@ export function Footer() {
                                         target="_blank" // Optional: Opens link in a new tab
                                         rel="noopener noreferrer" // Recommended for target="_blank"
                                     >
-                                        Know More
+                                       NAICS codes
                                     </Link>
                                 </li>
                             </ul>

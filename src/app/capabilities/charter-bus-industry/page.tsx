@@ -7,7 +7,7 @@ import { PageHeader } from '@/components/shared/PageHeader';
 const SERVICE_TITLE = "Charter Bus Industry";
 const SERVICE_SUBTITLE = "Charter bus services for personnel and group transportation.";
 // Use an image ID that exists in your placeholder images
-const HERO_IMAGE_ID = "project-dod-1"; // Using an existing image ID from your data
+const HERO_IMAGE_ID = "charter-bus"; // Using an existing image ID from your data
 
 export default function CharterBusIndustryPage() {
     return (

@@ -173,13 +173,13 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   },
   {
     id: "Finance & Banking",
-    imageUrl: "/images/Finance & Banking.jpg",
+    imageUrl: "/images/Finance & Banking.jpeg",
     description: "Finance and banking services",
     imageHint: "Banking and finance"
   },
   {
     id: "automotive",
-    imageUrl: "/images/Automotive.jpg",
+    imageUrl: "/images/Automotive.jpeg",
     description: "Automotive industry services",
     imageHint: "Automotive industry"
   },
