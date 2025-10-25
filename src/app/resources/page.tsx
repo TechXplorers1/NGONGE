@@ -11,11 +11,11 @@ import { ArrowRight, Download } from "lucide-react";
 export default function ResourcesPage() {
   return (
     <>
-      <PageHeader
+      {/* <PageHeader
         title="Resources"
         subtitle="Downloadable documents and insights from our team."
         imageId="page-header-resources"
-      />
+      /> */}
       <div className="container mx-auto py-12 sm:py-20 space-y-16 sm:space-y-24">
         <section id="downloads">
             <div className="text-center">
@@ -49,7 +49,7 @@ export default function ResourcesPage() {
             </div>
         </section>
 
-        <section id="blog">
+        {/* <section id="blog">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Latest Insights</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
@@ -92,7 +92,7 @@ export default function ResourcesPage() {
               );
             })}
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );

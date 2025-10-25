@@ -40,8 +40,8 @@ export function Footer() {
                             <ul className="mt-4 space-y-2">
                                 <li><Link href="/about" className="text-sm text-muted-foreground hover:text-accent">About Us</Link></li>
                                 <li><Link href="/past-performance" className="text-sm text-muted-foreground hover:text-accent">Projects</Link></li>
-                                {/* <li><Link href="/certifications" className="text-sm text-muted-foreground hover:text-accent">Certifications</Link></li>
-                                <li><Link href="/resources" className="text-sm text-muted-foreground hover:text-accent">Resources</Link></li> */}
+                                 {/* <li><Link href="/certifications" className="text-sm text-muted-foreground hover:text-accent">Certifications</Link></li> */}
+                                <li><Link href="/resources" className="text-sm text-muted-foreground hover:text-accent">Resources</Link></li> 
                                 {/* ADDED: New "Know More" link */}
                                 <li>
                                     <Link 
