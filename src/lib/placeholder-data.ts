@@ -429,21 +429,21 @@ export const companyCodes = {
 
 export const resources = [
   {
-    title: 'Capability Statement',
-    description: 'A comprehensive overview of our services, past performance, and core competencies.',
-    downloadUrl: '#',
+    title: 'Transportation Capability Statement',
+    description: ' Our operations combine precision scheduling, fleet coordination,passenger logistics & more..',
+    downloadUrl: '/documents/NGONGE_Transportation_Capability_Statement.pdf',
     icon: FileText
   },
   {
-    title: 'Logistics Solutions Brochure',
-    description: 'Detailed information on our transportation and logistics services.',
-    downloadUrl: '#',
+    title: 'Laundry Capability Statement',
+    description: 'Our logistics-based service model ensures reliable pickup, laundering, and delivery pickups.',
+    downloadUrl: '/documents/NGONGE_Laundry_Capability_Statement.pdf',
     icon: Truck
   },
   {
     title: 'Facilities Support Brochure',
-    description: 'Learn more about how we manage and maintain federal facilities for peak performance.',
-    downloadUrl: '#',
+    description: 'We deliver mission-ready, environmentally compliant services that support base operations, exercises, and contingency deployments. ',
+    downloadUrl: '/documents/NGONGE_Facilities_Support_Brochure.pdf',
     icon: Building
   }
 ];
