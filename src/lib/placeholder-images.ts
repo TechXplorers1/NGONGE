@@ -211,7 +211,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   {
     "id": "leader-3",
     "description": "Professional headshot of an approachable male executive in business casual attire.",
-    "imageUrl": "/images/leader-3.jpg",
+    "imageUrl": "/images/Risk Management Advisor.jpeg",
     "imageHint": "professional headshot"
   },
   // --- Case Study Images ---
