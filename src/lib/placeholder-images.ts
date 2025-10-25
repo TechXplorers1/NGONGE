@@ -205,7 +205,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   {
     "id": "leader-2",
     "description": "Professional headshot of a confident female executive in a modern office.",
-    "imageUrl": "/images/leader-2.jpg",
+    "imageUrl": "/images/Elvis Automation Advisor.jpeg",
     "imageHint": "professional headshot"
   },
   {
