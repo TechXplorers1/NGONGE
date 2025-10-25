@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function Logo(props: { className?: string }) {
   return (
     <Image
-      src="https://github.com/Humer-tx/NGO-NGE/blob/main/NGO_LOGO.png?raw=true"
+      src="/images/NGO_LOGO.png"
       alt="NGONGE LLC Logo"
       width={48}
       height={48}
