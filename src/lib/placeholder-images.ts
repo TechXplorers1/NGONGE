@@ -12,7 +12,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   {
     "id": "hero-banner",
     "description": "Hero banner showing the US Capitol building at dusk",
-    "imageUrl": "/images/us_capital building.png",
+    "imageUrl": "/images/home_bg.jpg",
     "imageHint": "US Capitol"
   },
   {
