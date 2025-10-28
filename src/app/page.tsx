@@ -42,28 +42,28 @@ export default function Home() {
       </section>
 
       {/* Reduced vertical padding from py-12 sm:py-16 to py-10 sm:py-14 */}
-      <section id="trust-indicators" className="bg-background py-10 sm:py-14">
-        <div className="container mx-auto text-center">
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-            Trusted by Federal Agencies
-          </h3>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 items-center max-w-4xl mx-auto">
-            {trustIndicators.map((indicator, i) => (
-              <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
-                {/* Increased image size from h-16 w-36 to h-20 w-48 */}
-                <div className="relative h-20 w-48">
-                    <Image 
-                        src={indicator.imageUrl}
-                        alt={indicator.alt}
-                        fill
-                        className="object-contain"
-                    />
-                </div>
-              </div>
-            ))}
+     <section id="trust-indicators" className="bg-background py-10 sm:py-14">
+  <div className="container mx-auto text-center">
+    <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+      Trusted by Federal Agencies
+    </h3>
+    <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-y-8 gap-x-4 items-center max-w-4xl mx-auto">
+      {trustIndicators.map((indicator, i) => (
+        <div key={indicator.name} className="flex justify-center animate-fade-in-up" style={{ animationDelay: `${i * 0.1}s`}}>
+          {/* 👇 CHANGE MADE HERE: Increased image container size */}
+          <div className="relative h-28 w-56"> {/* Changed from h-20 w-48 to h-28 w-56 */}
+              <Image 
+                  src={indicator.imageUrl}
+                  alt={indicator.alt}
+                  fill
+                  className="object-contain"
+              />
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Reduced vertical padding from py-16 sm:py-24 to py-12 sm:py-20 */}
       <section id="capabilities" className="py-12 sm:py-20 bg-card">

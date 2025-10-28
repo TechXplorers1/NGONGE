@@ -203,19 +203,24 @@ export const navLinks = [
 
 export const trustIndicators = [
     {
-        name: 'GSA Advantage',
-        imageUrl: '/images/adv19-nav-logo.png',
-        alt: 'GSA Advantage Logo'
+        name: 'Aiforce',
+        imageUrl: '/images/Air_Force.png',
+        alt: 'Airforce Logo'
     },
     {
-        name: 'SAM.gov Registered',
-        imageUrl: '/images/sam.gov_.jpg',
-        alt: 'SAM.gov Registered Logo'
+        name: 'Navy',
+        imageUrl: '/images/Navy.png',
+        alt: 'Navy Logo'
     },
     {
-        name: 'ISO 9001 Certified',
-        imageUrl: '/images/832_iso_9001_logo.jpg',
-        alt: 'ISO 9001 Certified Logo'
+        name: 'Army',
+        imageUrl: '/images/Army.png',
+        alt: 'Army Logo'
+    },
+    {
+        name: 'Department_of_the_Interio',
+        imageUrl: '/images/Department_of_the_Interio.png',
+        alt: 'Department_of_the_Interio Logo'
     },
 ];
 
