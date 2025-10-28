@@ -19,7 +19,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         title="About NGONGE LLC"
-        subtitle="Our Commitment to Excellence in Federal Service"
+        subtitle="Our Commitment to Excellence in Every Service We Deliver"
         imageId="page-header-certifications"
       />
 
