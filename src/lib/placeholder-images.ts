@@ -79,7 +79,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   // --- Facilities & Maintenance Images ---
   {
     id: "facilities-support",
-    imageUrl: "/images/Facilities Support.jpg",
+    imageUrl: "/images/Facility_Support.jpeg",
     description: "Facilities support and maintenance",
     imageHint: "Building maintenance and facilities"
   },
