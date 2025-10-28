@@ -328,18 +328,18 @@ export const certifications = [
     description: 'Certified by the SBA, this program helps small, disadvantaged businesses compete in the marketplace.',
     downloadUrl: '#',
   },
-  {
-    name: 'HUBZone Certified',
-    icon: Building,
-    description: 'The Historically Underutilized Business Zones (HUBZone) program fuels small business growth in historically underutilized business zones.',
-    downloadUrl: '#',
-  },
-  {
-    name: 'ISO 9001:2015',
-    icon: ShieldCheck,
-    description: 'An international standard that specifies requirements for a quality management system (QMS).',
-    downloadUrl: '#',
-  },
+  // {
+  //   name: 'HUBZone Certified',
+  //   icon: Building,
+  //   description: 'The Historically Underutilized Business Zones (HUBZone) program fuels small business growth in historically underutilized business zones.',
+  //   downloadUrl: '#',
+  // },
+  // {
+  //   name: 'ISO 9001:2015',
+  //   icon: ShieldCheck,
+  //   description: 'An international standard that specifies requirements for a quality management system (QMS).',
+  //   downloadUrl: '#',
+  // },
   {
     name: 'OSHA Compliance',
     icon: HardHat,
@@ -352,8 +352,8 @@ export const certifications = [
 export const leadershipTeam = [
   {
     name: 'Roland Mboumien',
-    title: 'Founder & CEO',
-    bio: 'With over 20 years of experience in federal logistics, Roland leads NGONGE with a focus on mission success and client satisfaction. His strategic vision has been instrumental in the company\'s growth.',
+    title: 'Founder, President & Owner — NGONGE LLC',
+    bio: 'Roland Mboumien is an accomplished Chemical Engineer and operations leader with nearly two decades of experience in engineering, process improvement, and corporate operations.Before founding NGONGE, Roland served in leadership positions at Pfizer Inc., where he led continuous improvement initiatives, global labeling system launches, and compliance-driven validation projects. His engineering precision and management expertise shaped his philosophy: operational excellence is not accidental—it’s engineered.At Walmart, Roland managed large-scale retail operations, leading 400 employees in a $108 million enterprise, further refining his ability to drive performance through teamwork, structure, and accountability.This unique blend of technical expertise and business leadership now defines NGONGE’s success in delivering safe, efficient, and compliant solutions to federal and commercial clients.',
     imageId: 'leader-1',
   },
   {
@@ -371,11 +371,11 @@ export const leadershipTeam = [
 ];
 
 export const companyTimeline = [
-    { year: '2015', event: 'NGONGE LLC founded to provide federal and local government services.' },
-    { year: '2017', event: 'Awarded first federal contract with the General Services Administration (GSA).' },
-    { year: '2019', event: 'Achieved 8(a) and HUBZone certifications from the Small Business Administration (SBA).' },
-    { year: '2021', event: 'Expanded service offerings to include comprehensive facilities support and laundry services.' },
-    { year: '2023', event: 'Received ISO 9001:2015 certification for quality management.' },
+    { year: '2024', event: 'NGONGE LLC founded to provide federal and local government services.' },
+    // { year: '2017', event: 'Awarded first federal contract with the General Services Administration (GSA).' },
+    // { year: '2019', event: 'Achieved 8(a) and HUBZone certifications from the Small Business Administration (SBA).' },
+    // { year: '2021', event: 'Expanded service offerings to include comprehensive facilities support and laundry services.' },
+    // { year: '2023', event: 'Received ISO 9001:2015 certification for quality management.' },
 ];
 
 export const blogPosts = [
@@ -441,7 +441,7 @@ export const resources = [
     icon: Truck
   },
   {
-    title: 'Facilities Support Brochure',
+    title: 'Facilities Support Capability Statement',
     description: 'We deliver mission-ready, environmentally compliant services that support base operations, exercises, and contingency deployments. ',
     downloadUrl: '/documents/NGONGE_Facilities_Support_Brochure.pdf',
     icon: Building

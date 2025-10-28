@@ -62,7 +62,7 @@ export default function PastPerformancePage() {
       <div className="container mx-auto py-12 sm:py-20 space-y-16 sm:space-y-24">
         <section id="ngonge-projects">
             <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Our Projects</h2>
+                <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">Our Current Projects</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">
                     A selection of contracts successfully delivered by NGONGE Federal Solutions.
                 </p>
@@ -83,7 +83,7 @@ export default function PastPerformancePage() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary mt-2">Past Projects</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">
-                    Key projects performed by our strategic partner, Vestis, showcasing their extensive experience.
+                    Key projects performed by our strategic partner, showcasing their extensive experience.
                 </p>
             </div>
              <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

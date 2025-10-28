@@ -132,14 +132,6 @@ export default function AboutPage() {
                         </Card>
                         <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                             <CardHeader className="p-0">
-                                <CardTitle className="text-lg text-muted-foreground">EIN</CardTitle>
-                            </CardHeader>
-                            <CardContent className="p-0 mt-2">
-                                <p className="text-2xl font-bold font-code text-primary">{companyCodes.ein}</p>
-                            </CardContent>
-                        </Card>
-                        <Card className="p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                            <CardHeader className="p-0">
                                 <CardTitle className="text-lg text-muted-foreground">CAGE Code</CardTitle>
                             </CardHeader>
                             <CardContent className="p-0 mt-2">

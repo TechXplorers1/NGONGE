@@ -18,7 +18,6 @@ export function Footer() {
                         <div className="text-sm text-muted-foreground space-y-1">
                             <p><strong>UEID:</strong> {companyCodes.uied}</p>
                             <p><strong>DUNS:</strong> {companyCodes.duns}</p>
-                            <p><strong>EIN:</strong> {companyCodes.ein}</p>
                             <p><strong>CAGE:</strong> {companyCodes.cage}</p>
                         </div>
                     </div>
