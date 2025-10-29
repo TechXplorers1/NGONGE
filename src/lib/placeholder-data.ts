@@ -420,7 +420,7 @@ export const contactInfo = [
     {
         icon: Phone,
         title: "Phone",
-        value: "+1 (336) 209-1982",
+        value: "+1 (252) 382-3639",
         href: "tel:+13362091982"
     }
 ];
