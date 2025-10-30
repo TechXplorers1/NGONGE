@@ -167,7 +167,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   },
   {
     id: "Manufacturing",
-    imageUrl: "/images/manufacturing.jpg",
+    imageUrl: "/images/Manufacturing.png",
     description: "Manufacturing industry services",
     imageHint: "Manufacturing plant"
   },
