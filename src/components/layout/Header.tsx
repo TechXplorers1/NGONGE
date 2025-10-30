@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -14,12 +13,11 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
+import { Menu, ArrowLeft } from "lucide-react";
 import { Logo } from "./Logo";
 import { navLinks } from "@/lib/placeholder-data";
 import { cn } from "@/lib/utils";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -50,6 +48,64 @@ ListItem.displayName = "ListItem";
 export function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+
+  const handleSubmenuOpen = (menuName: string) => {
+    setActiveSubmenu(menuName);
+  };
+
+  const handleSubmenuClose = () => {
+    setActiveSubmenu(null);
+  };
+
+  const renderMobileSubmenu = (link: any) => {
+    return (
+      <div className="h-full flex flex-col">
+        {/* Submenu Header with Back Button */}
+        <div className="flex items-center gap-3 p-4 border-b bg-background sticky top-0 z-10">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={handleSubmenuClose}
+            className="h-8 w-8"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            <span className="sr-only">Go back</span>
+          </Button>
+          <h2 className="text-lg font-semibold">{link.name}</h2>
+        </div>
+
+        {/* Scrollable Submenu Content */}
+        <div className="flex-1 overflow-y-auto">
+          <div className="p-4 space-y-2">
+            {link.children.map((child: any) => (
+              <Link
+                key={child.title}
+                href={child.href}
+                className={cn(
+                  "block p-3 rounded-lg border transition-colors",
+                  pathname === child.href
+                    ? "bg-accent text-accent-foreground border-accent"
+                    : "bg-card hover:bg-accent/50 border-border"
+                )}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setActiveSubmenu(null);
+                }}
+              >
+                <div className="font-medium text-foreground">{child.title}</div>
+                {child.description && (
+                  <p className="text-sm text-muted-foreground mt-1">
+                    {child.description}
+                  </p>
+                )}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-sm">
@@ -118,74 +174,77 @@ export function Header() {
               </Button>
             </SheetTrigger>
 
-            <SheetContent side="left" className="p-0 pr-6 w-full sm:max-w-sm">
-              <div className="flex justify-between items-center p-4 border-b">
-                <Link
-                  href="/"
-                  className="flex items-center space-x-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <Logo />
-                  <span className="font-bold">NGONGE LLC</span>
-                </Link>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <X className="h-6 w-6" />
-                  <span className="sr-only">Close menu</span>
-                </Button>
-              </div>
+            <SheetContent 
+              side="left" 
+              className="p-0 w-full sm:max-w-sm flex flex-col h-full"
+              onInteractOutside={(e) => {
+                if (activeSubmenu) {
+                  e.preventDefault();
+                }
+              }}
+            >
+              {/* Add SheetTitle for accessibility - visually hidden */}
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              
+              {/* Main Menu Header - NO TOP CROSS BUTTON */}
+              {!activeSubmenu && (
+                <div className="flex items-center p-4 border-b shrink-0">
+                  <Link
+                    href="/"
+                    className="flex items-center space-x-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <Logo />
+                    <span className="font-bold">NGONGE LLC</span>
+                  </Link>
+                </div>
+              )}
 
-              <div className="mt-6 flex flex-col p-2">
-                 <Accordion type="single" collapsible className="w-full">
-                  {navLinks.map((link) => {
-                    if (link.children) {
-                      return (
-                        <AccordionItem value={link.name} key={link.name} className="border-none">
-                          <AccordionTrigger className="py-3 text-lg font-medium hover:no-underline">
+              {/* Menu Content - Scrollable */}
+              <div className="flex-1 overflow-hidden">
+                {activeSubmenu ? (
+                  // Submenu View - Back arrow is already implemented
+                  renderMobileSubmenu(
+                    navLinks.find((link) => link.name === activeSubmenu)
+                  )
+                ) : (
+                  // Main Menu View
+                  <div className="h-full overflow-y-auto">
+                    <div className="p-4 space-y-1">
+                      {navLinks.map((link) => {
+                        if (link.children) {
+                          return (
+                            <Button
+                              key={link.name}
+                              variant="ghost"
+                              className="w-full justify-between p-4 h-auto text-lg font-normal"
+                              onClick={() => handleSubmenuOpen(link.name)}
+                            >
+                              <span>{link.name}</span>
+                              <span className="text-muted-foreground">→</span>
+                            </Button>
+                          );
+                        }
+
+                        return (
+                          <Link
+                            key={link.name}
+                            href={link.href}
+                            className={cn(
+                              "block w-full text-left p-4 rounded-md text-lg font-medium transition-colors border",
+                              pathname === link.href
+                                ? "bg-accent text-accent-foreground border-accent"
+                                : "hover:bg-muted border-transparent"
+                            )}
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
                             {link.name}
-                          </AccordionTrigger>
-                          <AccordionContent className="pl-4 pb-0">
-                            <div className="flex flex-col space-y-1">
-                            {link.children.map((child) => (
-                              <Link
-                                key={child.title}
-                                href={child.href}
-                                className={cn(
-                                  "text-muted-foreground hover:text-foreground p-2 rounded-md",
-                                  pathname === child.href &&
-                                    "text-accent font-semibold"
-                                )}
-                                onClick={() => setMobileMenuOpen(false)}
-                              >
-                                {child.title}
-                              </Link>
-                            ))}
-                            </div>
-                          </AccordionContent>
-                        </AccordionItem>
-                      );
-                    }
-
-                    return (
-                      <Link
-                        key={link.name}
-                        href={link.href}
-                        className={cn(
-                          "text-lg font-medium p-3 rounded-md block border-b",
-                           pathname === link.href
-                            ? "bg-accent text-accent-foreground"
-                            : "hover:bg-muted"
-                        )}
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {link.name}
-                      </Link>
-                    );
-                  })}
-                 </Accordion>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
               </div>
             </SheetContent>
           </Sheet>
