@@ -24,12 +24,17 @@ export default function Home() {
         )}
         <div className="absolute inset-0 bg-primary/70" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground px-4">
+          
+          {/* Main Title - drop-shadow-lg is usually okay here because the text is huge */}
           <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg animate-fade-in-up">
             Mission-Critical Federal Solutions
           </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow animate-fade-in-up [animation-delay:0.2s]">
+
+          {/* 👇 FIXED LINE BELOW: Removed 'drop-shadow', added 'font-medium' for readability */}
+          <p className="mt-4 max-w-2xl text-lg md:text-xl font-medium animate-fade-in-up [animation-delay:0.2s]">
             NGONGE delivers unparalleled logistics, facility support, and IT modernization to ensure your agency's success.
           </p>
+
           <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up [animation-delay:0.4s]">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform hover:scale-105">
               <Link href="/resources">Download Capability Statement</Link>
