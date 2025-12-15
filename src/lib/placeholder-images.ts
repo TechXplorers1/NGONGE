@@ -274,7 +274,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
   {
     "id": "project-interior",
     "description": "A wide shot of the Hoover Dam, representing the Bureau of Reclamation.",
-    "imageUrl": "/images/Rental and Laundry Services.png",
+    "imageUrl": "/images/yuma_c1.jpeg",
     "imageHint": "hoover dam"
   },
   {
